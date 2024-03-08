@@ -94,6 +94,24 @@ body{
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    border: 3px solid pink;
+    margin: 0 5%;
+}
+
+header {
+  border: 3px dotted yellow;
+}
+
+section{
+  border: 3px dotted black;
+}
+
+div {
+  border: 3px dotted green;
+}
+
+article {
+  border: 3px dotted red;
 }
 
 ul{
