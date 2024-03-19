@@ -8,6 +8,10 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/normalise.css">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
   <script src="https://kit.fontawesome.com/5062d34338.js" crossorigin="anonymous"></script>
   <meta name="description" content="">
 
@@ -31,29 +35,98 @@
       <ul>
         <li><a href="#projects" rel="noopener">Projects</a></li>
         <li><a href="skills" rel="noopener">Skills</a></li>
-        <li id="contact-me"><a href="#contact" rel="noopener">Contact</a></li>
         <li><a href="#about" rel="noopener">About</a></li>
+        <li id="contact-me"><a href="#contact" rel="noopener">Contact</a></li>
       </ul>
     </nav>
     <div class="header-divider"></div>
     <h1>Front End Web Developer</h1>
-    <h2>Al Poliakow</h2>
-    <h4>(They/them)</h4>
+    <div class="name">
+      <h2>Al Poliakow</h2>
+      <h4>(They/them)</h4>
+    </div>
     <p>Front End Developer with a passion accessibility, attention to detail, and timely outcomes.</p>
   </header>
   <main>
     <section id="projects">
-      <div class="content=wrapper">
-        <h3>Projects</h3>
-        <article>
+      <div class="content-wrapper">
+        <h2>Projects</h2>
+        <article class="unplugged">
           <figure>
-            <img>
+            <img src="img/unplugged-mobile.png" alt="Mobile version of Unplugged website homepage">
+          </figure>
+          <figure>
+            <img src="img/unplugged-tablet.png" alt="Tablet version of Unplugged website homepage">
           </figure>
           <h4>Unplugged</h4>
-          <p>Explanation</p>
-          <p><Span>Skills:</Span></p>
-          <p><Span>Tools:</Span></p>
-          <button>Live Page</button>
+          <p>A 3-page responsive website advertising a fictional retreat including a features list, reviews, contact section and live map.</p>
+          <div class="tools">
+            <p><Span>Skills:</Span></p>
+            <ul>
+              <li>CSS3 & Flexbox</li>
+              <li>HTML</li>
+              <li>Git and GitHub</li>
+              <li>Responsive typography</li>
+              <li>Media queries</li>
+              <li>Responsive images</li>
+            </ul>
+            <p><Span>Tools:</Span></p>
+            <ul>
+              <li>Command line</li>
+              <li>GitHub</li>
+              <li>Text Editor</li>
+              <li>Chrome DevTools</li>
+            </ul>
+          </div>
+          <button class="live">Live Page</button>
+        </article>
+        <article class="gtw">
+          <figure>
+            <img src="img/gtw-desktop.png" alt="Desktop version of Guess The Word game">
+          </figure>
+          <h4>Guess the Word (Game)</h4>
+          <p> A single-page website where the player guesses a mystery word, one letter at a time.</p>
+          <div class="tools">
+            <p><Span>Skills:</Span></p>
+            <ul>
+              <li>CSS 3</li>
+              <li>HTML 5</li>
+              <li>Vanilla JavaScript</li>
+              <li>Git and GitHub</li>
+            </ul>
+            <p><Span>Tools:</Span></p>
+            <ul>
+              <li>CodeSandbox</li>
+              <li>Chrome DevTools</li>
+              <li>The Command Line</li>
+              <li>Visual Studio Code</li>
+            </ul>
+          </div>
+          <button class="live">Live Page</button>
+        </article>
+        <article class="sna">
+          <figure>
+            <img src="img/sna-desktop.png" alt="Desktop version of Super Sticky Notes">
+          </figure>
+          <h4>Sticky Note App</h4>
+          <p>An interactive app that allows the user to create “sticky notes” to store to-do items.</p>
+          <div class="tools">
+            <p><Span>Skills:</Span></p>
+            <ul>
+              <li>CSS 3</li>
+              <li>HTML 5</li>
+              <li>Vanilla JavaScript</li>
+              <li>Git and GitHub</li>
+            </ul>
+            <p><Span>Tools:</Span></p>
+            <ul>
+              <li>CodeSandbox</li>
+              <li>Chrome DevTools</li>
+              <li>The Command Line</li>
+              <li>Visual Studio Code</li>
+            </ul>
+          </div>
+          <button class="live">Live Page</button>
         </article>
         <article>
           <figure>
@@ -61,9 +134,11 @@
           </figure>
           <h4>Project name</h4>
           <p>Explanation</p>
-          <p><Span>Skills:</Span></p>
-          <p><Span>Tools:</Span></p>
-          <button>Live Page</button>
+          <div class="skills">
+            <p><Span>Skills:</Span></p>
+            <p><Span>Tools:</Span></p>
+          </div>
+          <button class="live">Live Page</button>
         </article>
         <article>
           <figure>
@@ -71,29 +146,11 @@
           </figure>
           <h4>Project name</h4>
           <p>Explanation</p>
-          <p><Span>Skills:</Span></p>
-          <p><Span>Tools:</Span></p>
-          <button>Live Page</button>
-        </article>
-        <article>
-          <figure>
-            <img>
-          </figure>
-          <h4>Project name</h4>
-          <p>Explanation</p>
-          <p><Span>Skills:</Span></p>
-          <p><Span>Tools:</Span></p>
-          <button>Live Page</button>
-        </article>
-        <article>
-          <figure>
-            <img>
-          </figure>
-          <h4>Project name</h4>
-          <p>Explanation</p>
-          <p><Span>Skills:</Span></p>
-          <p><Span>Tools:</Span></p>
-          <button>Live Page</button>
+          <div class="skills">
+            <p><Span>Skills:</Span></p>
+            <p><Span>Tools:</Span></p>
+          </div>
+          <button class="live">Live Page</button>
         </article>
       </div>
     </section>
@@ -102,11 +159,20 @@
         <h2>Skills</h2>
         <article>
           <h3>Developer Skills</h3>
-          <div>Skill 1</div>
+          <div class="skill-list">CSS 3 & flexbox</div>
+          <div class="skill-list">HTML 5</div>
+          <div class="skill-list">Git and the Command Line</div>
+          <div class="skill-list">GitHub</div>
+          <div class="skill-list">Responsive typography and media queries</div>
+          <div class="skill-list">Vanilla JavaScript</div>
         </article>
         <article>
           <h3>Tech Stack</h3>
-          <div>Skill 1</div>
+          <div class="skill-list">Chrome DevTools</div>
+          <div class="skill-list">VS Code (text editor)</div>
+          <div class="skill-list">Git</div>
+          <div class="skill-list">GitHub</div>
+          <div class="skill-list">CodeSandbox</div>
         </article>
       </div>
     </section>
@@ -116,19 +182,25 @@
           <img>
         </figure>
         <h2>About me</h2>
-        <h3>Front End Developing</h3>
-        <h4>Why did I get into this?</h4> 
-        <p>Developing websites became a passion of mine when I realized how small changes can make such a significant positive impact on the user experience, 
+        <h3>Front End Developer</h3>
+        <h4>Why did I get into this?</h4>
+        <p>Developing websites became a passion of mine when I realized how small changes can make such a significant
+          positive impact on the user experience,
           and improve access to information in both directions. <br>
-          Developing websites is a way in which I believe I can positively impact many lives in a small but sustainable way.
-          Using problem solving to create truly responsive websites, with consideration to accessibility 
-          entices users to continue to interact with the site. 
+          Developing websites is a way in which I believe I can positively impact many lives in a small but sustainable
+          way.
+          Using problem solving to create truly responsive websites, with consideration to accessibility
+          entices users to continue to interact with the site.
         </p>
         <h4>What makes me an ideal member for your team?</h4>
-        <p>Coming from a health professional background, I have excellent communication skills and work well as a part of a team. 
-          I also thrive working autonomously and have a good balance of being self-sufficent and asking for help when needed.
-          I derive satisfaction from the end result so enjoy delivering the goods. I am passionate about ongoing learning and strive for continuous improvement.</p>
-        <p>Problem solving and puzzles are a passion of mine, including solving a dodecahedron rubix and bouldering (puzzles for the whole body).</p>
+        <p>Coming from a health professional background, I have excellent communication skills and work well as a part
+          of a team.
+          I also thrive working autonomously and have a good balance of being self-sufficent and asking for help when
+          needed.
+          I derive satisfaction from the end result so enjoy delivering the goods. I am passionate about ongoing
+          learning and strive for continuous improvement.</p>
+        <p>Problem solving and puzzles are a passion of mine, including solving a dodecahedron rubix and bouldering
+          (puzzles for the whole body).</p>
         <p> 🧩 🧗 </p>
       </div>
     </section>
@@ -137,7 +209,7 @@
     <div class="content-wrapper" id="contact">
       <h2>Let's Connect</h2>
       <div class="footer-content">
-        <div class="contact">
+        <div class="hire">
           <h4>Hire Me</h4>
           <address>
             <p>mx.al.poliakow@gmail.com</p>
@@ -145,7 +217,7 @@
           </address>
           <!--mail-to-->
         </div>
-        <div class="social">
+        <div class="follow">
           <h4>Want to see more?</h4>
           <div class="social-icons">
             <p><a href="" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a></p>
@@ -154,14 +226,14 @@
             </p>
           </div>
         </div>
-      <div>
-        <h3>Meet me</h3>
-        <p>I'm based in Melbourne (Naarm - Wurundjeri land), Australia, and available to meet locally or online.</p>
+        <div class="meet">
+          <h3>Meet me</h3>
+          <p>I'm based in Melbourne (Naarm - Wurundjeri land), Australia, and available to meet locally or online.</p>
+        </div>
+        <div class="copyright">
+          <p>Copyright 2024 | Al Polakow</p>
+        </div>
       </div>
-      <div class="copyright">
-        <p>Copyright 2024 | Al Polakow</p>
-      </div>
-    </div>
   </footer>
   <script src="js/app.js"></script>
 
