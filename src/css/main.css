@@ -94,7 +94,7 @@ body {
   flex-direction: column;
   text-align: center;
   border: 3px solid pink;
-  margin: 0 5%;
+  padding: 0 5%;
   background-color: #cacaf8;
 }
 
@@ -135,7 +135,8 @@ h4{
 }
 
 p,
-ul {
+ul,
+a {
   font-family: "Nunito Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -157,22 +158,43 @@ header {
 nav ul {
   display: flex;
   justify-content: space-around;
-  margin: 30px 0 60px 0;
+  padding-left:0;
 }
 
-nav #contact-me {
-  background-color: yellow;
+/*--UNHAPPY WITH BUTTON--*/
+nav #contact-me button{
+ transition-duration: 0.4s;
+ background-color:#351D77;
+ border-color:#351D77;
+ border-radius: 1em;
+ color:white;
+}
+
+.hover1 {
+  background-color:yellow;
+  color: white;
+}
+
+
+nav #contact-me a{
+  color:white;
+  padding: 0 5px;
 }
 
 /* ==========================================================================
 Mobile Styles
 ========================================================================== */
+/*--HEADER--*/
 nav ul {
   margin: 30px 0 60px 0;
 }
 
 header h1 {
-  margin-top: 60px;
+  margin: 0;
+}
+
+header .name {
+  padding-top: 1.5em;
 }
 
 header h2,
@@ -194,19 +216,34 @@ header p {
 }
 
 #projects h2 {
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
+  font-size: 3em;
 }
 
 #projects figure {
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
 }
 
-#projects h4 {
-  margin-bottom: 40px;
+#projects h3 {
+  margin: 0 0 40px 0;
+  font-size:2em;
+}
+
+#projects p {
+  margin:0;
 }
 
 #projects .tools {
   margin-top: 30px;
+}
+
+#projects .tools ul {
+  padding:0;
+  line-height: 1.5em;
+}
+
+#projects .tools p span {
+  font-size: 1.25em;
 }
 
 #projects .live {

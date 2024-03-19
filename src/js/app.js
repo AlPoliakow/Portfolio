@@ -1,7 +1,7 @@
-const gtwButton = document.querySelector(".gtw button");
+const contactButton = document.querySelector("#contact-me button");
 
-gtwButton.addEventListener("click", function(){
-    location.href="file:///C:/Users/alepo/Documents/Coding/guess-the-word/index.html";
-//url to be updated
+contactButton.addEventListener("mouseover", function(){
+    contactButton.classList.add("hover1");
+    console.log("Hover registered");
 });
 
