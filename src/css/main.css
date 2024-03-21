@@ -471,6 +471,11 @@ header .bold {
   border: dotted grey 3px;
 }
 
+#projects .projects-divider{
+  width: 100%;
+  height:80px;
+}
+
 /*--Skills styles--*/
 #skills .content-wrapper{
   margin: 80px 0 120px 0;
@@ -545,7 +550,75 @@ header .bold {
 Desktop
 ========================================================================== */
 
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+/*--HEADER STYLES--*/
+  nav ul{
+    margin-top: 80px;
+    width: 50%;
+    margin-left: 50%;
+  }
+  header .bold {
+   margin-bottom: 140px;
+  }
+
+  header h1{
+    font-size: 4.5em;
+  }
+
+/*--PROJECTS STYLES--*/
+#projects .content-wrapper{
+  margin: 140px 0;
+}
+
+/*--Skills styles--*/
+#skills .content-wrapper{
+  margin: 120px 0 120px 0;
+}
+
+#skills .skill-list {
+  width: 60%;
+  margin: 0 20%;
+}
+
+#skills .skill-list article {
+  display: flex;
+  flex-flow: column wrap;
+  flex-basis: 33%;
+}
+
+/*--ABOUT STYLES--*/
+#about .content-wrapper {
+  margin: 140px 0;
+  display: flex;
+}
+
+#about figure {
+  flex-basis: 50%;
+  padding: 0;
+}
+
+#about img{
+  height: 100%;
+  width: 100%;
+}
+
+#about .about-content{
+  flex-basis: 50%;
+}
+
+/*--FOOTER STYLES--*/
+footer{
+  margin: 160px 0 100px 0;
+}
+
+#contact h2{
+  margin:0; 
+}
+
+#contact .copyright{
+  margin: 40px 0;
+}
+}
 @media print,
 (-webkit-min-device-pixel-ratio: 1.25),
 (min-resolution: 1.25dppx),
