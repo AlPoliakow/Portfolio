@@ -88,13 +88,17 @@ textarea {
 General Styes
 ========================================================================== */
 body {
-  width: 90%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  padding: 0 5%;
+  padding: 0;
   background-color: #cacaf8;
+}
+
+.content-wrapper{
+  width: 90%;
+  padding: 0 5%;
 }
 
 /*header {
@@ -117,11 +121,7 @@ ul {
   list-style: none;
 }
 
-img {
-  border: 2px solid white;
-  height: 75px;
-  width: 100px;
-}
+
 
 h1,
 h2,
@@ -193,6 +193,11 @@ nav #contact-me a{
 /* ==========================================================================
 Mobile Styles
 ========================================================================== */
+/*-- GENERAL STYLES--*/
+h2 {
+  font-size: 3em;
+}
+
 /*--HEADER--*/
 nav ul {
   margin: 30px 0 60px 0;
@@ -200,6 +205,10 @@ nav ul {
 
 header h1 {
   margin: 0;
+}
+
+header h2{
+  font-size: 2em;
 }
 
 header .name {
@@ -232,6 +241,12 @@ header p {
 
 #projects figure {
   margin: 0 0 20px 0;
+}
+
+#projects img {
+  border: 2px solid white;
+  height: 75px;
+  width: 100px;
 }
 
 #projects h3 {
@@ -285,16 +300,17 @@ header p {
 
 #about .content-wrapper {
   margin: 80px 0;
+  padding-top: 20px; 
 }
 
 #about figure {
-  margin:0; 
+  width:60%;
+  margin: 0 20%;
 }
 
 #about img {
-  border: 2px dotted black;
-  height: 50px;
-  margin: 0;
+  border: 5px solid #152A3E;;
+  width: 100%;
 }
 
 #about h2{
@@ -505,6 +521,7 @@ header .bold {
 /*--ABOUT STYLES--*/
 #about .content-wrapper {
   margin-bottom: 120px;
+  padding-top:60px; 
 }
 
 #about h2{
@@ -557,9 +574,6 @@ Desktop
     width: 50%;
     margin-left: 50%;
   }
-  header .bold {
-   margin-bottom: 140px;
-  }
 
   header h1{
     font-size: 4.5em;
@@ -590,20 +604,23 @@ Desktop
 #about .content-wrapper {
   margin: 140px 0;
   display: flex;
+  justify-content: space-between;
 }
 
 #about figure {
-  flex-basis: 50%;
+  flex-basis: 45%;
   padding: 0;
+  margin:0; 
 }
 
-#about img{
-  height: 100%;
-  width: 100%;
-}
+
 
 #about .about-content{
-  flex-basis: 50%;
+  flex-basis: 45%;
+}
+
+#about h2{
+  margin-top: 0;
 }
 
 /*--FOOTER STYLES--*/
