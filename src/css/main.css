@@ -96,9 +96,43 @@ body {
   background-color: #cacaf8;
 }
 
-.content-wrapper{
+.content-wrapper {
   width: 90%;
   padding: 0 5%;
+}
+
+.notification-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  background: #FFFFFF;
+  text-align: center;
+  color: black;
+  font-size: 14px;
+}
+
+.notification-bar p {
+  padding: 0;
+  margin: 0;
+}
+
+.close {
+  position: absolute;
+  top: 50%;
+  right: 1%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  font-size: 2em;
+  color: grey;
+  cursor: pointer;
+}
+
+.hide{
+  height:0;
 }
 
 /*header {
@@ -127,16 +161,16 @@ h1,
 h2,
 h3,
 h4,
-h6{
+h6 {
   font-family: "Alata", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #152A3E;
 }
 
-h2{
+h2 {
   font-size: 3.5em;
-  text-transform:uppercase;
+  text-transform: uppercase;
   font-weight: bold;
 }
 
@@ -158,47 +192,43 @@ a {
 /*--HEADER STYLES--*/
 
 header {
-  position: relative; 
+  margin-top:40px;
+  position: relative;
   height: 100vh;
   width: 100%;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   flex-basis: 300px;
 }
 
 header::before {
   content: "";
-  background: url('../img/rubix.jpg') no-repeat; /* https://www.pexels.com/photo/stainless-steel-close-wrench-on-spanner-210881/ */
+  background: url('../img/rubix.jpg') no-repeat;
+  /* https://www.pexels.com/photo/stainless-steel-close-wrench-on-spanner-210881/ */
   background-size: cover;
   background-position: center;
   position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-  opacity:0.15;
-}
-
-header .bold {
-  background: rgb(248, 248, 248);
-  padding: 10px 3px;
-  border: black dotted 2px; 
-}
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.15;
+} 
 
 header h1 {
   font-size: 3em;
   text-transform: uppercase;
-  font-weight:590;
+  font-weight: 590;
 }
 
 nav ul {
   display: flex;
   justify-content: space-around;
-  padding-left:0;
+  padding-left: 0;
 }
 
 /*--UNHAPPY WITH BUTTON--*/
-nav #contact-me button{
+/*nav #contact-me button{
  transition-duration: 0.4s;
  background-color:#351D77;
  border-color:#351D77;
@@ -209,7 +239,7 @@ nav #contact-me button{
 .hover1 {
   background-color:yellow;
   color: white;
-}
+}*/
 
 
 /*nav #contact-me a{
@@ -227,14 +257,15 @@ h2 {
 
 /*--HEADER--*/
 nav ul {
-  margin: 30px 0; /*60px 0;*/
+  margin: 30px 0;
+  /*60px 0;*/
 }
 
 header h1 {
   margin: 0;
 }
 
-header h2{
+header h2 {
   font-size: 2em;
   font-weight: 500;
 }
@@ -258,30 +289,30 @@ header p {
 }
 
 /*--SLOGAN STYLES--*/
-#slogan{
+#slogan {
   background: #152A3E;
   /*color: white;*/
   text-transform: uppercase;
-  
+
 }
 
-#slogan h3{
+#slogan h3 {
   color: white;
   padding: 30px 0;
-  margin:0;
+  margin: 0;
 }
 
 /*--PROJECT STYLES--*/
 #projects .content-wrapper {
   /*margin-top: 80px;*/
-  margin-top:20px;
+  margin-top: 20px;
 }
 
 #projects h2 {
   margin: 0 0 20px 0;
 }
 
-#projects article{
+#projects article {
   margin-bottom: 50px;
 }
 
@@ -297,12 +328,12 @@ header p {
 
 #projects h3 {
   margin: 0 0 40px 0;
-  font-size:2em;
+  font-size: 2em;
   text-decoration: underline;
 }
 
 #projects p {
-  margin:0;
+  margin: 0;
 }
 
 #projects .tools {
@@ -324,7 +355,7 @@ header p {
 
 /*--SKILLS STYLES--*/
 #skills {
-  position: relative; 
+  position: relative;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -334,15 +365,16 @@ header p {
 
 #skills::before {
   content: "";
-  background: url('../img/tools.jpg') no-repeat; /* https://www.pexels.com/photo/stainless-steel-close-wrench-on-spanner-210881/ */
+  background: url('../img/tools.jpg') no-repeat;
+  /* https://www.pexels.com/photo/stainless-steel-close-wrench-on-spanner-210881/ */
   background-size: cover;
   background-position: center;
   position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-  opacity:0.2;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.2;
 }
 
 #skills .content-wrapper {
@@ -350,9 +382,8 @@ header p {
   opacity: 1.0;
 }
 
-#skills h2{
-  margin:0
-  
+#skills h2 {
+  margin: 0
 }
 
 #skills h3 {
@@ -362,14 +393,15 @@ header p {
 #skill .skill-list {
   margin-top: 20px;
 }
+
 /*--ABOUT STYLES--*/
 #about .content-wrapper {
   margin: 80px 0;
-  padding-top: 20px; 
+  padding-top: 20px;
 }
 
 #about figure {
-  width:60%;
+  width: 60%;
   margin: 0 20%;
 }
 
@@ -377,12 +409,14 @@ header p {
   width: 100%;
 }
 
-#about h2{
-  margin:40px 0 /*60px*/20px 0;
+#about h2 {
+  margin: 40px 0
+    /*60px*/
+    20px 0;
 }
 
 #about h3 {
-  margin-bottom:40px;
+  margin-bottom: 40px;
   font-size: 1em;
 }
 
@@ -393,28 +427,28 @@ header p {
 }
 
 /*--FOOTER STYLES--*/
-footer{
+footer {
   background: #ebebfa;
 }
 
 #contact .content-wrapper {
-  margin-top:80px;
+  margin-top: 80px;
 }
 
-#contact .footer-content{
+#contact .footer-content {
   margin-top: 60px;
 }
 
-#contact .hire{
+#contact .hire {
   margin: 0;
 }
 
-#contact .hire h3{
+#contact .hire h3 {
   margin: 0;
 }
 
-#contact .hire i{
-  padding-left: 15px; 
+#contact .hire i {
+  padding-left: 15px;
 }
 
 #contact .hire address {
@@ -437,27 +471,28 @@ footer{
   margin: 60px 0;
 }*/
 
-#contact .copyright{
+#contact .copyright {
   margin: 60px 0;
   border: 2px dotted #cacaf8;
-  padding: 0 10px; 
+  padding: 0 10px;
+}
 
 
 
-/* ==========================================================================
+  /* ==========================================================================
      Helper classes
      ========================================================================== */
 
-/*
+  /*
    * Hide visually and from screen readers
    */
 
-.hidden,
-[hidden] {
-  display: none !important;
-}
+  .hidden,
+  [hidden] {
+    display: none !important;
+  }
 
-/*
+  /*
    * Hide only visually, but have it available for screen readers:
    * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
    *
@@ -466,328 +501,349 @@ footer{
    *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
    */
 
-.visually-hidden {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
-}
+  .visually-hidden {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
+  }
 
-/*
+  /*
    * Extends the .visually-hidden class to allow the element
    * to be focusable when navigated to via the keyboard:
    * https://www.drupal.org/node/897638
    */
 
-.visually-hidden.focusable:active,
-.visually-hidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
-}
+  .visually-hidden.focusable:active,
+  .visually-hidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
+  }
 
-/*
+  /*
    * Hide visually and from screen readers, but maintain layout
    */
 
-.invisible {
-  visibility: hidden;
-}
+  .invisible {
+    visibility: hidden;
+  }
 
-/*
+  /*
    * Clearfix: contain floats
    *
    * The use of `table` rather than `block` is only necessary if using
    * `::before` to contain the top-margins of child elements.
    */
 
-.clearfix::before,
-.clearfix::after {
-  content: "";
-  display: table;
-}
+  .clearfix::before,
+  .clearfix::after {
+    content: "";
+    display: table;
+  }
 
-.clearfix::after {
-  clear: both;
-}
+  .clearfix::after {
+    clear: both;
+  }
 
-/* ==========================================================================
+  /* ==========================================================================
      EXAMPLE Media Queries for Responsive Design.
      These examples override the primary ('mobile first') styles.
      Modify as content requires.
      ========================================================================== */
 
-/* ========================================================================== 
+  /* ========================================================================== 
 Tablet styles
 ========================================================================== */
 
-@media only screen and (min-width: 768px) {
-/*--GENERAL STYLES--*/
-h2{
-  font-size: 3em;
-}
-/*--HEADER STYLES--*/
-nav ul{
-  margin-bottom: 80px;
-}
+  @media only screen and (min-width: 768px) {
+    /*--GENERAL STYLES--*/
+    h2 {
+      font-size: 3em;
+    }
 
-header .bold {
-  padding: 20px 0;
-}
+    /*--HEADER STYLES--*/
+    nav ul {
+      margin-bottom: 80px;
+    }
 
-/*--PROJECTS STYLES--*/
-#projects .content-wrapper{
-  margin-top: 120px;
-}
+    header .bold {
+      padding: 20px 0;
+    }
 
-#projects h2 {
-  margin-bottom: 80px;
-}
+    header h1{
+      margin-bottom: 30px; 
+    }
 
-#projects .project-articles {
-  display:flex; 
-  justify-content: center;
-  align-items: flex-start;
-  flex-flow: row wrap;
-}
+    header h4{
+      margin-bottom: 30px;
+    }
+    header p{
+      margin-bottom: 100px; 
+    }
 
-#projects .project-articles article{
-  display: flex;
-  flex-flow: column wrap;
-  flex-basis: 49%;
-  border: dotted grey 3px;
-}
+    /*--PROJECTS STYLES--*/
+    #projects .content-wrapper {
+      margin-top: 120px;
+    }
 
-#projects .projects-divider{
-  width: 100%;
-  height:80px;
-}
+    #projects h2 {
+      margin-bottom: 80px;
+    }
 
-/*--Skills styles--*/
-#skills .content-wrapper{
-  margin: 80px 0 120px 0;
-}
+    #projects .project-articles {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-flow: row wrap;
+    }
 
-#skills h3 {
-  margin-bottom:30px;
-}
+    #projects .project-articles article {
+      display: flex;
+      flex-flow: column wrap;
+      flex-basis: 49%;
+      border: dotted grey 3px;
+    }
 
-#skills .skill-list {
-  display:flex; 
-  justify-content: center;
-  align-items: flex-start;
-  flex-flow: row wrap;
-}
+    #projects .projects-divider {
+      width: 100%;
+      height: 80px;
+    }
 
-#skills .skill-list article {
-  display: flex;
-  flex-flow: column wrap;
-  flex-basis: 40%;
-}
+    /*--Skills styles--*/
+    #skills .content-wrapper {
+      margin: 80px 0 120px 0;
+    }
 
-#skill .skill-list .skill divider{
-  border: black solid 2px; 
-}
+    #skills h2 {
+      margin-top: 60px; 
+    }
 
-/*--ABOUT STYLES--*/
-#about .content-wrapper {
-  margin-bottom: 120px;
-  padding-top:60px; 
-}
+    #skills h3 {
+      margin-bottom: 30px;
+    }
 
-#about h2{
-  margin:80px 0;
-}
+    #skills .skill-list {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-flow: row wrap;
+    }
 
-#about h3{
-  margin-bottom: 60px;
-}
+    #skills .skill-list article {
+      display: flex;
+      flex-flow: column wrap;
+      flex-basis: 40%;
+    }
 
-/*--FOOTER STYLES--*/
-#contact .content-wrapper {
-  margin-top:120px;
-}
+    #skill .skill-list .skill divider {
+      border: black solid 2px;
+    }
 
-#contact .hire address {
-  margin-top: 0;
-}
+    /*--ABOUT STYLES--*/
+    #about .content-wrapper {
+      margin-bottom: 120px;
+      padding-top: 60px;
+    }
 
-#contact .footer-content{
-  margin-top: 80px;
-  display: flex;
-}
+    #about h2 {
+      margin: 80px 0;
+    }
 
-#contact .footer-content div{
-  flex-basis: 30%;
-}
+    #about h3 {
+      margin-bottom: 60px;
+    }
 
-#contact .footer-content div h3{
-  margin:0 0 20px 0;
-}
+    /*--FOOTER STYLES--*/
+    #contact .content-wrapper {
+      margin-top: 120px;
+    }
 
-#contact .meet{
-  margin: 0;
-}
+    #contact .hire address {
+      margin-top: 0;
+    }
 
-#contact .copyright{
-  margin: 80px 0;
-}
-}
+    #contact .footer-content {
+      margin-top: 80px;
+      display: flex;
+    }
 
-/* ==========================================================================
+    #contact .footer-content div {
+      flex-basis: 30%;
+    }
+
+    #contact .footer-content div h3 {
+      margin: 0 0 20px 0;
+    }
+
+    #contact .meet {
+      margin: 0;
+    }
+
+    #contact .copyright {
+      margin: 80px 0;
+    }
+  }
+
+  /* ==========================================================================
 Desktop
 ========================================================================== */
 
-@media only screen and (min-width: 1200px) {
-/*--HEADER STYLES--*/
-  nav ul{
-    margin-top: 80px;
-    width: 50%;
-    margin-left: 50%;
+  @media only screen and (min-width: 1200px) {
+
+    /*--HEADER STYLES--*/
+    nav ul {
+      margin-top: 80px;
+      margin-bottom: 140px;
+      width: 50%;
+      margin-left: 50%;
+    }
+
+    header h1 {
+      font-size: 4.5em;
+      color:orange;
+    }
+
+    /*--PROJECTS STYLES--*/
+    #projects .content-wrapper {
+      margin: 140px 0;
+    }
+
+    /*--Skills styles--*/
+    #skills .content-wrapper {
+      margin: 120px 0 120px 0;
+    }
+
+    #skills .skill-list {
+      width: 60%;
+      margin: 0 20%;
+    }
+
+    #skills .skill-list article {
+      display: flex;
+      flex-flow: column wrap;
+      flex-basis: 33%;
+    }
+
+    /*--ABOUT STYLES--*/
+    #about .content-wrapper {
+      margin: 140px 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #about figure {
+      flex-basis: 45%;
+      padding: 0;
+      margin: 0;
+    }
+
+
+
+    #about .about-content {
+      flex-basis: 45%;
+    }
+
+    #about h2 {
+      margin-top: 0;
+    }
+
+    /*--FOOTER STYLES--*/
+    footer {
+      margin: 160px 0 100px 0;
+    }
+
+    #contact h2 {
+      margin: 0;
+    }
+
+    #contact .copyright {
+      margin: 40px 0;
+    }
+
   }
 
-  header h1{
-    font-size: 4.5em;
+  @media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
   }
 
-/*--PROJECTS STYLES--*/
-#projects .content-wrapper{
-  margin: 140px 0;
-}
-
-/*--Skills styles--*/
-#skills .content-wrapper{
-  margin: 120px 0 120px 0;
-}
-
-#skills .skill-list {
-  width: 60%;
-  margin: 0 20%;
-}
-
-#skills .skill-list article {
-  display: flex;
-  flex-flow: column wrap;
-  flex-basis: 33%;
-}
-
-/*--ABOUT STYLES--*/
-#about .content-wrapper {
-  margin: 140px 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-#about figure {
-  flex-basis: 45%;
-  padding: 0;
-  margin:0; 
-}
-
-
-
-#about .about-content{
-  flex-basis: 45%;
-}
-
-#about h2{
-  margin-top: 0;
-}
-
-/*--FOOTER STYLES--*/
-footer{
-  margin: 160px 0 100px 0;
-}
-
-#contact h2{
-  margin:0; 
-}
-
-#contact .copyright{
-  margin: 40px 0;
-}
-}
-@media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
+  /* ==========================================================================
      Print styles.
      Inlined to avoid the additional HTTP request:
      https://www.phpied.com/delay-loading-your-print-css/
      ========================================================================== */
 
-@media print {
+  @media print {
 
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
+    *,
+    *::before,
+    *::after {
+      background: #fff !important;
+      color: #000 !important;
+      /* Black prints faster */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
 
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
 
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
+    a[href]::after {
+      content: " (" attr(href) ")";
+    }
 
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
+    abbr[title]::after {
+      content: " (" attr(title) ")";
+    }
 
-  /*
+    /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+      content: "";
+    }
 
-  pre {
-    white-space: pre-wrap !important;
-  }
+    pre {
+      white-space: pre-wrap !important;
+    }
 
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
 
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
 
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
 
-  h2,
-  h3 {
-    page-break-after: avoid;
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
   }
-}
