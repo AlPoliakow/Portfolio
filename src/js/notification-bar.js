@@ -71,6 +71,3 @@
 
 } )();
 
-$('.close').on('click', function() {
-    $(this).parent('.notification-bar').hide();
-  });
