@@ -431,7 +431,8 @@ footer {
 
 #contact .copyright {
   margin: 60px 0;
-  border: 2px dotted #cacaf8;
+  /*border: 2px dotted #cacaf8;*/
+  border: 2px dotted #a4a4f5;
   padding: 0 10px;
 }
 
