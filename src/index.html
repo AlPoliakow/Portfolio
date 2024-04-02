@@ -36,6 +36,7 @@
     <p class="message">Now accepting inquiries<button class="close">&times;</button></p>
   </div>
   <header>
+    <div class="content-wrapper">
     <nav>
       <ul>
         <li><a href="#projects" rel="noopener">Projects</a></li>
@@ -45,13 +46,13 @@
       </ul>
     </nav>
     <div class="header-divider"></div>
-
     <h1>Front End Web Developer</h1>
     <div class="name">
       <h2>Al Poliakow</h2>
       <h4>(They/them)</h4>
     </div>
     <p>A Front End Developer with a passion for accessibility, attention to detail, and timely outcomes.</p>
+  </div>
   </header>
   <main>
     <section id="slogan">
@@ -66,17 +67,30 @@
           <article class="unplugged">
             <figure>
               <!--add link to live site-->
-              <a href="https://alpoliakow.github.io/unplugged/" target="_blank" rel="noopener"><img src="img/unplugged.png"
-                  alt="Webpage with navigation bar and main photo of a woman on a bridge"></a>
+              <a href="https://alpoliakow.github.io/unplugged/" target="_blank" rel="noopener"><img
+                  src="img/unplugged.png" alt="Webpage with navigation bar and main photo of a woman on a bridge"></a>
             </figure>
             <h3>Unplugged</h3>
-            <p>A 3-page responsive website advertising a professional retreat including a features list, reviews, contact
+            <p>A 3-page responsive website advertising a professional retreat including a features list, reviews,
+              contact
               section and live map.</p>
             <div class="tools">
               <p><Span>Skills:</Span> HTML, CSS, Flexbox, responsive typography and images, and media queries.</p>
               <p><br><Span>Tools:</Span> Command line, GitHub, VS Code, Chrome DevTools.</p>
             </div>
             <!--<button class="live">Live Page</button>-->
+          </article>
+          <article>
+            <figure>
+              <a href="https://alpoliakow.github.io/organize-me-project/" target="_blank" rel="noopener"><img
+                  src="img/organize-me.png" alt="White webpage with blue accents, photos and written paragraphs"></a>
+            </figure>
+            <h3>OrganizeMe Now</h3>
+            <p>A single-page responsive website adverstizing a small decluttering and organizing business.</p>
+            <div class="tools">
+              <p><Span>Skills:</Span> HTML, CSS, Flexbox, responsive typography and images, and media queries.</p>
+              <p><br><Span>Tools:</Span>Command line, GitHub, VS Code, Chrome DevTools.</p>
+            </div>
           </article>
           <article class="gtw">
             <!--update link-->
@@ -106,78 +120,73 @@
             </div>
             <!--<button class="live">Live Page</button>-->
           </article>
-          <!--<article>
-            <figure>
-              <a href="" target="_blank" rel="noopener"><img></a>
-            </figure>
-            <h4>Project name</h4>
-            <p>Explanation</p>
-            <div class="skills">
-              <p><Span>Skills:</Span></p>
-              <p><Span>Tools:</Span></p>
-            </div>
-            <button class="live">Live Page</button>
-          </article>-->
         </div>
       </div>
     </section>
     <section id="skills">
       <div class="content-wrapper">
         <h2>Skills</h2>
-        <h3>Developer Skills <i class="fa-solid fa-keyboard"></i></h3>
-        <div class="skill-list">
-          <article>
-            <p>CSS</p>
-          </article>
-          <article>
-            <p>HTML</p>
-          </article>
-          <article>
-            <p>Responsive typography</p>
-          </article>
-          <article>
-            <p>Flexbox</p>
-          </article>
-          <article>
-            <p>Media queries</p>
-          </article>
-          <article>
-            <p>Vanilla JavaScript</p>
-          </article>
+        <div class="block">
+          <h3>Developer Skills <i class="fa-solid fa-keyboard"></i></h3>
+          <div class="skill-list">
+            <article>
+              <p>CSS</p>
+            </article>
+            <article>
+              <p>HTML</p>
+            </article>
+            <article>
+              <p>Responsive typography</p>
+            </article>
+            <article>
+              <p>Flexbox</p>
+            </article>
+            <article>
+              <p>Media queries</p>
+            </article>
+            <article>
+              <p>Vanilla JavaScript</p>
+            </article>
+          </div>
         </div>
-        <h3>Tech Stack <i class="fa-solid fa-toolbox"></i></h3>
-        <div class="skill-list">
-          <article>
-            <p>Chrome DevTools</p>
-          </article>
-          <article>
-            <p>Visual Studio Code</p>
-          </article>
-          <article>
-            <p>CodeSandbox</p>
-          </article>
-          <article>
-            <p>Git</p>
-          </article>
-          <article>
-            <p>The command line</p>
-          </article>
-          <article>
-            <p>GitHub</p>
-          </article>
+        <div class="block">
+          <h3>Tech Stack <i class="fa-solid fa-toolbox"></i></h3>
+          <div class="skill-list">
+            <article>
+              <p>Chrome DevTools</p>
+            </article>
+            <article>
+              <p>Visual Studio Code</p>
+            </article>
+            <article>
+              <p>CodeSandbox</p>
+            </article>
+            <article>
+              <p>Git</p>
+            </article>
+            <article>
+              <p>The command line</p>
+            </article>
+            <article>
+              <p>GitHub</p>
+            </article>
+          </div>
         </div>
       </div>
     </section>
     <section id="about">
       <div class="content-wrapper">
-        <figure>
-          <img src="img/profile.jpg" alt="Smiling person with a wolf's tail and a sunset background">
-        </figure>
-        <div class="about-content">
+        <div class="about-content1">
           <h2>About me</h2>
-          <h3>My name is Al and I'm a Front End Developer based in Melbourne (Naarm), Australia.</h3>
+          <figure>
+            <img src="img/profile2.jpg" alt="Smiling person with a wolf's tail and a sunset background">
+          </figure>
+        </div>
+        <div class="about-content2">
+          <h3>My name is Al, and I'm a Front End Developer based in Melbourne (Naarm), Australia.</h3>
           <h4>Why Front End Developing? <!--Why did I get into this? What makes me passionate?--></h4>
-          <p><!--Developing websites became a passion of mine when I realized how--> To implement changes to improve the
+          <p><!--Developing websites became a passion of mine when I realized how--> To implement changes to improve
+            the
             user experience and improve access to information.
             <!--Small changes can make such a significant
             positive impact on the user experience,
@@ -189,9 +198,11 @@
             entices users to continue to interact with the site.-->
           </p>
           <h4>What makes me an ideal member for your team?</h4>
-          <p>Coming from a health professional background, I have excellent communication skills and work well as a part
+          <p>Coming from a health professional background, I have excellent communication skills and work well as a
+            part
             of a team. <br>
-            I also thrive working autonomously and have a good balance of being self-sufficent and asking for help when
+            I also thrive working autonomously and have a good balance of being self-sufficent and asking for help
+            when
             needed.<br>
             I derive satisfaction from the end result so enjoy delivering the goods.<br>I am passionate about ongoing
             learning and strive for continuous improvement.</p>
@@ -210,7 +221,6 @@
           <address>
             <p>mx.al.poliakow@gmail.com</p>
           </address>
-          <!--mail-to-->
         </div>
         <div class="follow">
           <h3>Learn more</h3>
@@ -227,13 +237,13 @@
           <p>I'm based in Melbourne (Naarm), Australia, and available to meet locally or online.</p>
         </div>
       </div>
-    <div class="copyright">
-      <p>Copyright 2024 | Al Poliakow</p>
-      <h6>I acknowledge the Traditional Custodians of Country throughout Australia and their connections to land, sea
-        and community. I pay my respect to their Elders past and present and extend that respect to all Aboriginal and
-        Torres Strait Islander peoples.</h6>
+      <div class="copyright">
+        <p>Copyright 2024 | Al Poliakow</p>
+        <h6>I acknowledge the Traditional Custodians of Country throughout Australia and their connections to land, sea
+          and community. I pay my respect to their Elders past and present and extend that respect to all Aboriginal and
+          Torres Strait Islander peoples.</h6>
+      </div>
     </div>
-  </div>
   </footer>
   <script src="js/app.js"></script>
 
