@@ -367,9 +367,6 @@ header p {
 
 #about .content-wrapper {
   margin: 40px 0;
-  display:flex;
-  justify-content: center;
-  flex-direction:column;
 }
 
 #about .about-content2{
@@ -548,10 +545,14 @@ Tablet styles
   }
 
   h2 {
-    font-size: 3em;
+    font-size: 4em;
   }
 
   /*--HEADER STYLES--*/
+  header .content-wrapper{
+    margin-bottom:100px;
+    }
+
   header nav ul {
     margin-bottom: 80px;
   }
@@ -562,13 +563,18 @@ Tablet styles
 
   header h1 {
     margin-bottom: 30px;
+    font-size: 4em;
+  }
+
+  header h2{
+    font-size: 2.5em;
   }
 
   header h4 {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
-  header p {
+  header .tag {
     margin-bottom: 100px;
   }
 
@@ -577,7 +583,6 @@ Tablet styles
   /*--PROJECTS STYLES--*/
   #projects .content-wrapper {
     margin-top: 120px;
-    max-width: 668px;
   }
 
   #projects h2 {
@@ -586,7 +591,7 @@ Tablet styles
 
   #projects .project-articles {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     flex-flow: row wrap;
   }
@@ -594,7 +599,7 @@ Tablet styles
   #projects .project-articles article {
     display: flex;
     flex-flow: column wrap;
-    flex-basis: 47%;
+    flex-basis: 45%;
   }
 
   /*#projects .projects-divider {
@@ -603,31 +608,32 @@ Tablet styles
   }*/
 
   /*--Skills styles--*/
-  /*#skills {
-    max-height: 500px; 
-  }*/
-
-  #skills .content-wrapper {
-    justify-content: space-around;
+  #skills {
+    max-height: 900px; 
   }
+
 
   #sklls h2{
-    margin-bottom: 0;
+    margin:0;
+    padding:0;
   }
 
-  #skills .content-wrapper .block {
-    width:49%;
+  #skills .tool-block{
     display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    padding:0;
+    justify-content: space-around;
+    flex-flow: column wrap;
+    flex-basis: 100%;
+  }
+
+  #skills .content-wrapper .tool-block .block {
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 60px;
   }
 
   #skills h3 {
     margin-bottom: 30px;
   }
-
-
 
   #skills .skill-list {
     display: flex;
@@ -646,12 +652,17 @@ Tablet styles
   #about .content-wrapper {
     margin-bottom: 120px;
     padding-top: 60px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
   }
 
   #about .about-content1{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items:center;
+    margin-bottom: 50px;
   }
 
   #about h2 {
@@ -660,6 +671,12 @@ Tablet styles
 
   #about figure{
     width: 80%;
+    display:flex;
+    justify-content: center;
+  }
+
+  #about .about-content2{
+    width:80%;
   }
 
   /*#about h3 {
@@ -722,9 +739,16 @@ Desktop
 
   /*--PROJECTS STYLES--*/
   #projects .content-wrapper {
-    margin: 140px 0;
+    margin: 140px 0 40px 0;
   }
 
+  #projects article{
+    margin-bottom:100px;
+  }
+
+  #projects .project-articles article {
+    flex-basis: 30%;
+  }
   /*--Skills styles--*/
   #skills {
     max-height: 1000px;
@@ -732,11 +756,6 @@ Desktop
 
   #skills .content-wrapper {
     margin: 80px 0 120px 0;
-  }
-
-  #skills .skill-list {
-    width: 60%;
-    margin: 0 20%;
   }
 
   #skills .skill-list article {
@@ -748,16 +767,19 @@ Desktop
   /*--ABOUT STYLES--*/
   #about .content-wrapper {
     margin: 120px 0;
-    padding:0;
     justify-content: space-between;
+    align-items:stretch;
+    flex-flow: row wrap;
   }
 
  #about .about-content1,
   #about .about-content2{
     display:flex;
-    flex-direction:column;
-    justify-content:space-between;
+    flex-direction: row;
+    flex-flow: row wrap;
+    align-items: stretch;
     width:47%;
+    margin:0;
   }
 
   #about h2{
@@ -767,6 +789,7 @@ Desktop
 
   #about figure{
     margin-bottom: 16px;
+    width:100%;
   }
 
   #about h3{
@@ -779,7 +802,7 @@ Desktop
 
   /*--FOOTER STYLES--*/
   footer {
-    padding: 160px 0 100px 0;
+    padding: 50px 0;
   }
 
   #contact h2 {
