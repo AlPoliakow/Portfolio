@@ -255,6 +255,7 @@ header p {
 #slogan h3 {
   color: white;
   padding: 30px 0;
+  font-size: 1.75em;
   margin: 0;
 }
 
@@ -578,7 +579,9 @@ Tablet styles
     margin-bottom: 100px;
   }
 
-
+  #slogan h3 {
+    word-spacing: 20px;
+  }
 
   /*--PROJECTS STYLES--*/
   #projects .content-wrapper {
@@ -735,6 +738,10 @@ Desktop
 
   header h1 {
     font-size: 4.5em;
+  }
+
+  #slogan h3 {
+    word-spacing: 40px;
   }
 
   /*--PROJECTS STYLES--*/
