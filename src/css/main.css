@@ -88,9 +88,9 @@ textarea {
 General Styes
 ========================================================================== */
 body {
-  display: flex;
+  /*display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: column;*/
   text-align: center;
   padding: 0;
   background-color: #cacaf8;
@@ -112,6 +112,7 @@ body {
   text-align: center;
   color: black;
   font-size: 14px;
+  opacity: 1.0;
 }
 
 .notification-bar p {
@@ -173,18 +174,21 @@ a {
 /*--BASE HEADER STYLES--*/
 header {
   margin-top: 40px;
+  /*--for notifications bar--*/
   position: relative;
+  /*--for header before--*/
   height: 100vh;
+  /*--for header before--*/
   width: 100%;
+  /*--for header before--*/
+  opacity: 1.0;
   display: flex;
-  flex-direction: column;
-  flex-basis: 300px;
+  align-items: stretch;
 }
 
 header::before {
   content: "";
   background: url('../img/rubix.jpg') no-repeat;
-  /* https://www.pexels.com/photo/stainless-steel-close-wrench-on-spanner-210881/ */
   background-size: cover;
   background-position: center;
   position: absolute;
@@ -195,54 +199,64 @@ header::before {
   opacity: 0.15;
 }
 
-header h1 {
-  font-size: 3em;
-  text-transform: uppercase;
-  font-weight: 590;
+header .content-wrapper{
+  opacity: 1.0;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
   padding-left: 0;
+  text-transform: uppercase;
 }
 
-header nav ul li a{
-  font-weight:700;
+header nav ul li a {
+  font-weight: 700;
 }
 
+header .header2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 
+header h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+  font-weight: 590;
+}
+
+header h2{
+  font-size: 2.25em;
+  font-weight: 500;
+}
+
+header h2 img {
+  height: 1.25em;
+  padding: 0 15px 15px 0;
+}
 /* ==========================================================================
 Mobile Styles
 ========================================================================== */
 /*--HEADER--*/
+header {
+  max-height: 450px;
+}
+
 header nav ul {
-  margin: 30px 0;
-  text-transform: uppercase;
-  /*60px 0;*/
+  margin-top: 30px;
 }
 
 header h1 {
-  margin: 20px 0;
+  margin: 30px 0;
 }
 
 header h2 {
-  font-size: 2em;
-  font-weight: 500;
+  margin: 20px 0;
 }
 
-header .name {
-  padding: 1.5em 0;
-  margin-bottom: 0;
-}
-
-header h2,
-header h4 {
-  margin: 0;
-}
-
-header p {
-  margin-bottom: 30px;
+header h4{
+  margin: 20px 0;
 }
 
 /*--SLOGAN STYLES--*/
@@ -308,7 +322,7 @@ header p {
   position: relative;
   height: 100vh;
   width: 100%;
-  display:flex;
+  display: flex;
   justify-content: center;
 }
 
@@ -327,24 +341,24 @@ header p {
 }
 
 #skills .content-wrapper {
-  padding:40px 0;
+  padding: 40px 0;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   /*flex-flow: row wrap;*/
 }
 
-#skills .block{
-  width:100%; 
-  margin:0;
+#skills .block {
+  width: 100%;
+  margin: 0;
 }
 
 #skills h2 {
-  width:100%;
+  width: 100%;
 }
 
 #skills h3 {
   margin-top: 40px;
-  width:100%;
+  width: 100%;
   font-weight: 700;
 }
 
@@ -362,16 +376,16 @@ header p {
 
 /*--ABOUT STYLES--*/
 #about {
-  display:flex;
-  justify-content:center;
+  display: flex;
+  justify-content: center;
 }
 
 #about .content-wrapper {
   margin: 40px 0;
 }
 
-#about .about-content2{
-  margin-top: 40px; 
+#about .about-content2 {
+  margin-top: 40px;
 }
 
 #about figure {
@@ -381,7 +395,7 @@ header p {
 
 #about img {
   width: 100%;
-  margin:0;
+  margin: 0;
 }
 
 #about h2 {
@@ -539,46 +553,26 @@ Tablet styles
 ========================================================================== */
 
 @media only screen and (min-width: 768px) {
-  /*--GENERAL STYLES--*/  
-  header {
-    display: flex;
-    justify-content: center;
-  }
 
+  /*--GENERAL STYLES TABLET--*/
   h2 {
     font-size: 4em;
   }
 
-  /*--HEADER STYLES--*/
-  header .content-wrapper{
-    margin-bottom:100px;
-    }
-
-  header nav ul {
-    margin-bottom: 80px;
-  }
-
-  header .bold {
-    padding: 20px 0;
+  /*--HEADER STYLES TABLET--*/
+  header {
+    max-height: 600px;
   }
 
   header h1 {
-    margin-bottom: 30px;
     font-size: 4em;
   }
 
-  header h2{
+  header h2 {
     font-size: 2.5em;
   }
 
-  header h4 {
-    margin-bottom: 50px;
-  }
-
-  header .tag {
-    margin-bottom: 100px;
-  }
-
+  /*--SLOGAN STYLES TABLET--*/
   #slogan h3 {
     word-spacing: 20px;
   }
@@ -612,16 +606,16 @@ Tablet styles
 
   /*--Skills styles--*/
   #skills {
-    max-height: 900px; 
+    max-height: 900px;
   }
 
 
-  #sklls h2{
-    margin:0;
-    padding:0;
+  #sklls h2 {
+    margin: 0;
+    padding: 0;
   }
 
-  #skills .tool-block{
+  #skills .tool-block {
     display: flex;
     justify-content: space-around;
     flex-flow: column wrap;
@@ -655,16 +649,16 @@ Tablet styles
   #about .content-wrapper {
     margin-bottom: 120px;
     padding-top: 60px;
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
 
-  #about .about-content1{
+  #about .about-content1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     margin-bottom: 50px;
   }
 
@@ -672,14 +666,14 @@ Tablet styles
     margin: 80px 0;
   }
 
-  #about figure{
+  #about figure {
     width: 80%;
-    display:flex;
+    display: flex;
     justify-content: center;
   }
 
-  #about .about-content2{
-    width:80%;
+  #about .about-content2 {
+    width: 80%;
   }
 
   /*#about h3 {
@@ -729,16 +723,30 @@ Desktop
   }
 
   /*--HEADER STYLES--*/
+  header {
+    max-height: 800px;
+  }
+
   header nav ul {
-    margin-top: 80px;
-    margin-bottom: 140px;
+    margin-top: 50px;
+    margin-bottom: 100px;
     width: 50%;
     margin-left: 50%;
   }
 
   header h1 {
     font-size: 4.5em;
+    margin: 60px 0;
   }
+
+  header h4{
+    margin:40px 0;
+  }
+
+  header h2 {
+    margin: 40px 0;
+    font-size:3em;
+  } 
 
   #slogan h3 {
     word-spacing: 40px;
@@ -749,13 +757,14 @@ Desktop
     margin: 140px 0 40px 0;
   }
 
-  #projects article{
-    margin-bottom:100px;
+  #projects article {
+    margin-bottom: 100px;
   }
 
   #projects .project-articles article {
     flex-basis: 30%;
   }
+
   /*--Skills styles--*/
   #skills {
     max-height: 1000px;
@@ -775,32 +784,32 @@ Desktop
   #about .content-wrapper {
     margin: 120px 0;
     justify-content: space-between;
-    align-items:stretch;
+    align-items: stretch;
     flex-flow: row wrap;
   }
 
- #about .about-content1,
-  #about .about-content2{
-    display:flex;
+  #about .about-content1,
+  #about .about-content2 {
+    display: flex;
     flex-direction: row;
     flex-flow: row wrap;
     align-items: stretch;
-    width:47%;
-    margin:0;
+    width: 47%;
+    margin: 0;
   }
 
-  #about h2{
-    margin:0;
-    width:100%;
+  #about h2 {
+    margin: 0;
+    width: 100%;
   }
 
-  #about figure{
+  #about figure {
     margin-bottom: 16px;
-    width:100%;
+    width: 100%;
   }
 
-  #about h3{
-    margin:0;
+  #about h3 {
+    margin: 0;
   }
 
   #about p {
