@@ -331,6 +331,7 @@ header h4 {
   width: 100%;
   display: flex;
   justify-content: center;
+  max-height:750px;
 }
 
 #skills::before {
@@ -348,39 +349,31 @@ header h4 {
 }
 
 #skills .content-wrapper {
-  padding: 40px 0;
   display: flex;
   flex-direction: column;
-  /*flex-flow: row wrap;*/
-}
-
-#skills .block {
-  width: 100%;
-  margin: 0;
 }
 
 #skills h2 {
-  width: 100%;
+  margin-top: 50px;
+}
+
+#skills .block {
+  margin-bottom: 50px;
 }
 
 #skills h3 {
-  margin-top: 40px;
   width: 100%;
   font-weight: 700;
+  margin-bottom: 20px;
 }
 
 #skills h3 i {
   padding-left: 10px;
 }
 
-#skills p {
+#skills .tool-block .block p {
   font-weight: bold;
 }
-
-#skills .skill-list {
-  margin-top: 20px;
-}
-
 /*--ABOUT STYLES--*/
 #about {
   display: flex;
@@ -597,45 +590,30 @@ Tablet styles
   #projects .project-articles article {
     flex-basis: 48%;
   }
-  /*--Skills styles--*/
-  #skills {
-    max-height: 900px;
-  }
+  /*--SKILLS TABLET STYLES--*/
+ #skills {
+  min-height:850px;
+ }
 
-
-  #sklls h2 {
-    margin: 0;
-    padding: 0;
+  #skills h2 {
+    margin-top: 100px;
   }
 
   #skills .tool-block {
     display: flex;
-    justify-content: space-around;
-    flex-flow: column wrap;
-    flex-basis: 100%;
+    flex-direction:column;
+    width:100%;
   }
 
   #skills .content-wrapper .tool-block .block {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
+    justify-content: center;
     margin-bottom: 60px;
   }
 
-  #skills h3 {
-    margin-bottom: 30px;
-  }
-
-  #skills .skill-list {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-flow: row wrap;
-  }
-
-  #skills .skill-list article {
-    display: flex;
-    flex-flow: column wrap;
-    flex-basis: 40%;
+  #skills .tool-block .block div{
+    width: 50%;
   }
 
   /*--ABOUT STYLES--*/
@@ -750,7 +728,7 @@ Desktop
     padding: 40px 0;
   }
 
-  /*--PROJECTS STYLES--*/
+  /*--PROJECTS STYLES DESKTOP--*/
   #projects .content-wrapper {
     margin: 140px 0 40px 0;
   }
@@ -767,19 +745,19 @@ Desktop
     margin-left:34%;
   }
 
-  /*--Skills styles--*/
-  #skills {
-    max-height: 1000px;
+  /*--SKILLS STYLES DESKTOP--*/
+
+
+  #skills h2 {
+    margin: 120px 0 40px 0;
   }
 
-  #skills .content-wrapper {
-    margin: 80px 0 120px 0;
+  #skills h3 {
+    margin-bottom: 30px;
   }
 
-  #skills .skill-list article {
-    display: flex;
-    flex-flow: column wrap;
-    flex-basis: 33%;
+  #skills .tool-block .block div{
+    width:33%;
   }
 
   /*--ABOUT STYLES--*/
