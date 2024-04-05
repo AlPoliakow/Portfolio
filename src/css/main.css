@@ -391,8 +391,6 @@ header h4 {
   text-align: left;
 }
 
-
-
 #about figure {
   width: 100%;
   margin: 0;
@@ -422,14 +420,13 @@ header h4 {
   font-size: 1.125em;
 }
 
-/*--FOOTER STYLES--*/
+/*--FOOTER MOBILE STYLES--*/
 footer {
-  /*background: #ebebfa;*/
   background: #d2d2fc;
 }
 
-#contact {
-  margin-top: 80px;
+#contact h2{
+  padding-top: 80px;
 }
 
 #contact .footer-content {
@@ -453,9 +450,13 @@ footer {
   margin-bottom: 40px;
 }
 
-/*#contact .follow h3{
-  margin-bottom: 30px;
-}*/
+#contact .follow h3 {
+  margin:20px 0 10px 0;
+}
+
+#contact .meet h3 {
+  margin: 20px 0;
+}
 
 #contact .follow .social-icons {
   display: flex;
@@ -464,9 +465,10 @@ footer {
   gap: 30px;
 }
 
-/*#contact .meet{
-  margin: 60px 0;
-}*/
+#contact .follow .social-icons p{
+  font-size: 1.5em;
+  gap: 20px;
+}
 
 #contact .copyright {
   margin: 60px 0;
@@ -649,31 +651,28 @@ Tablet styles
   #about .about-content2 {
     width:80%;
   }
-
-  /*#about h3 {
-    margin-bottom: 60px;
-  }*/
-
-  /*--FOOTER STYLES--*/
-  #contact .content-wrapper {
-    margin-top: 120px;
-  }
-
-  #contact .hire address {
-    margin-top: 0;
-  }
-
+  /*--FOOTER TABLET STYLES--*/
   #contact .footer-content {
     margin-top: 80px;
     display: flex;
+    justify-content:center;
   }
 
   #contact .footer-content div {
     flex-basis: 30%;
   }
 
-  #contact .footer-content div h3 {
+  #contact .footer-content .hire h3,
+  #contact .footer-content .meet h3 {
     margin: 0 0 20px 0;
+  }
+
+  #contact .hire h3 {
+    margin: 0 0 60px 0;
+  }
+
+  #contact .follow h3 {
+    margin:0;
   }
 
   #contact .meet {
@@ -800,7 +799,7 @@ Desktop
     margin: 16px 0;
   }
 
-  /*--FOOTER STYLES--*/
+  /*--FOOTER DESKTOP STYLES--*/
   footer {
     padding: 50px 0;
   }
@@ -809,6 +808,10 @@ Desktop
     margin: 0;
   }
 
+  #contact .footer-content .hire h3,
+  #contact .footer-content .meet h3{{
+    margin-bottom:40px;
+  }
   #contact .copyright {
     margin: 40px 0;
   }
