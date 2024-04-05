@@ -441,6 +441,10 @@ footer {
   margin: 0;
 }
 
+#contact .hire h3 a {
+  font-weight:bold;
+}
+
 #contact .hire i {
   padding-left: 15px;
 }
@@ -809,8 +813,13 @@ Desktop
   }
 
   #contact .footer-content .hire h3,
-  #contact .footer-content .meet h3{{
+  #contact .footer-content .meet h3{
     margin-bottom:40px;
+    gap: 40px;
+  }
+
+  #contact .footer-content .follow h3{
+    margin-bottom:10px;
   }
   #contact .copyright {
     margin: 40px 0;
