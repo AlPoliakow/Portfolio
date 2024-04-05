@@ -391,10 +391,7 @@ header h4 {
   text-align: left;
 }
 
-#about h3,
-#about h4{
-  width:100%;
-}
+
 
 #about figure {
   width: 100%;
@@ -408,6 +405,11 @@ header h4 {
 
 #about h2 {
   margin: 20px 0 40px 0;
+}
+
+#about h3,
+#about h4{
+  width:100%;
 }
 
 #about h3 {
@@ -633,14 +635,6 @@ Tablet styles
     margin:0;
   }
 
-  #about .about-content1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom:30px;
-  }
-
   #about h2 {
     margin: 80px 0;
   }
@@ -649,6 +643,7 @@ Tablet styles
     width: 80%;
     display: flex;
     justify-content: center;
+    margin-bottom:30px;
   }
  
   #about .about-content2 {
@@ -768,36 +763,38 @@ Desktop
 
   /*--ABOUT DESKTOP STYLES--*/
   #about .content-wrapper {
-    margin: 120px 0;
-    justify-content: space-between;
+    margin: 40px 0 120px 0;
+    justify-content: center;
+    gap: 10%;
     align-items: stretch;
     flex-flow: row wrap;
-  }
-
-  #about .about-content1,
-  #about .about-content2 {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: stretch;
-    width: 47%;
-    margin: 0;
   }
 
   #about h2 {
-    margin: 0 0 30px 0;
     width: 100%;
   }
 
   #about figure {
-    margin-bottom: 16px;
-    width: 100%;
+    margin:0;
+    width: 40%;
   }
 
-  #about h3,
-  #about h4 {
+  #about .about-content2 {
+    display: flex;
+    flex-direction:column;
+    width: 30%;
     margin: 0;
   }
 
+  #about h3 {
+    font-size: 1.75em;
+    margin:0 0 15px 0;
+  }
+
+  #about h4{
+    font-size: 1.5em;
+    margin:0 0 25px 0;
+  }
 
   #about p {
     margin: 16px 0;
