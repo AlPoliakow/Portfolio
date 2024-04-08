@@ -85,15 +85,13 @@ textarea {
      ========================================================================== */
 
 /* ==========================================================================
-General Styes
+GENERAL STYLES
 ========================================================================== */
 body {
-  /*display: flex;
-  justify-content: center;
-  flex-direction: column;*/
   text-align: center;
   padding: 0;
   background-color: #cacaf8;
+  width:100%;
 }
 
 .content-wrapper {
@@ -101,6 +99,43 @@ body {
   padding: 0 5%;
 }
 
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6 {
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #152A3E;
+  opacity: 1.0;
+}
+
+h2 {
+  font-size: 3em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+p,
+ul,
+a {
+  font-family: "Nunito Sans", sans-serif;
+  /*font-optical-sizing: auto;*/
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+  color: #152A3E;
+  text-decoration: none;
+  opacity: 1.0;
+}
+/*---NOTIFICATIONS BAR---*/
 /*.notification-bar {
   position: fixed;
   top: 0;
@@ -145,53 +180,16 @@ body {
   height: 0;
 }*/
 
-ul {
-  list-style: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h6 {
-  font-family: "Alata", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #152A3E;
-  opacity: 1.0;
-}
-
-h2 {
-  font-size: 3em;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-p,
-ul,
-a {
-  font-family: "Nunito Sans", sans-serif;
-  /*font-optical-sizing: auto;*/
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100,
-    "YTLC" 500;
-  color: #152A3E;
-  text-decoration: none;
-  opacity: 1.0;
-}
-
-/*--BASE HEADER STYLES--*/
+/*--_BASE HEADER STYLES-_-*/
 header {
-  /*margin-top: 40px;*/
   /*--for notifications bar--*/
+  /*margin-top: 40px;*/
+  /*--for header before--*/
   position: relative;
   /*--for header before--*/
-  height: 100vh;
+  /*height: 100vh;*/
   /*--for header before--*/
   width: 100%;
-  /*--for header before--*/
   opacity: 1.0;
   display: flex;
   align-items: stretch;
@@ -208,11 +206,12 @@ header::before {
   bottom: 0px;
   left: 0px;
   opacity: 0.15;
-  box-sizing: border-box;
 }
 
 header .content-wrapper {
-  opacity: 1.0;
+  opacity: 1.0;  
+  display:flex;
+  flex-direction:column;
 }
 
 header nav ul {
@@ -227,9 +226,15 @@ header nav ul li a {
 }
 
 header .header2 {
+  align-items:center;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  flex-direction:column;
+}
+
+header h1,
+header h2,
+header h4{
+  width:90%;
 }
 
 header h1 {
@@ -249,19 +254,15 @@ header h2 img {
 }
 
 /* ==========================================================================
-Mobile Styles
+MOBILE STYLES
 ========================================================================== */
-/*--HEADER--*/
-header {
-  max-height: 550px;
-}
-
+/*---HEADER MOBILE STYLES---*/
 header nav ul {
   margin-top: 30px;
 }
 
 header h1 {
-  margin: 30px 0;
+  margin: 40px 0;
 }
 
 header h2 {
@@ -269,10 +270,10 @@ header h2 {
 }
 
 header h4 {
-  margin: 20px 0;
+  margin: 20px 0 60px 0;
 }
 
-/*--SLOGAN STYLES MOBILE--*/
+/*---SLOGAN MOBILE STYLES---*/
 #slogan {
   background: #152A3E;
   text-transform: uppercase;
@@ -286,7 +287,7 @@ header h4 {
   margin: 0;
 }
 
-/*--PROJECT STYLES MOBILE--*/
+/*---PROJECT MOBILE STYLES---*/
 #projects h2 {
   margin: 50px 0;
 }
@@ -336,10 +337,9 @@ header h4 {
   font-weight: bold;
 }
 
-/*--SKILLS STYLES MOBILE--*/
+/*---SKILLS MOBILE STYLES---*/
 #skills {
   position: relative;
-  height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -387,10 +387,9 @@ header h4 {
 #skills .tool-block .block p {
   font-weight: bold;
 }
-/*--ABOUT MOBILE STYLES--*/
+/*---ABOUT MOBILE STYLES---*/
 #about {
   display: flex;
-  justify-content: center;
 }
 
 #about .content-wrapper {
@@ -438,17 +437,21 @@ header h4 {
   font-size: 1.125em;
 }
 
-/*--FOOTER MOBILE STYLES--*/
+#about .about-paragraph{
+  flex-direction:column;
+}
+
+/*---FOOTER MOBILE STYLES---*/
 footer {
   background: #d2d2fc;
 }
 
-#contact h2{
-  padding-top: 80px;
+footer .content-wrapper{
+  padding-top:40px;
 }
 
 #contact .footer-content {
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 #contact .hire {
@@ -494,7 +497,6 @@ footer {
 
 #contact .copyright {
   margin: 60px 0;
-  /*border: 2px dotted #cacaf8;*/
   border: 2px dotted #a4a4f5;
   padding: 0 10px;
 }
@@ -584,22 +586,22 @@ footer {
      ========================================================================== */
 
 /* ========================================================================== 
-Tablet styles
+TABLET STYLES
 ========================================================================== */
 
 @media only screen and (min-width: 768px) {
-
-  /*--GENERAL STYLES TABLET--*/
+  /*---GENERAL TABLET STYLES---*/
   h2 {
     font-size: 4em;
   }
 
-  /*--HEADER STYLES TABLET--*/
+  /*---HEADER TABLET STYLES---*/
   header {
     max-height: 600px;
   }
 
   header h1 {
+    margin-top:12%;
     font-size: 4em;
   }
 
@@ -607,13 +609,13 @@ Tablet styles
     font-size: 2.5em;
   }
 
-  /*--SLOGAN STYLES TABLET--*/
+  /*---SLOGAN TABLET STYLES---*/
   #slogan h3 {
     font-size: 1.25em;
     word-spacing: 20px;
   }
 
-  /*--PROJECTS TABLET STYLES--*/
+  /*---PROJECTS TABLET STYLES---*/
     #projects h2 {
     margin: 80px 0;
   }
@@ -625,7 +627,7 @@ Tablet styles
   #projects .project-articles article {
     flex-basis: 48%;
   }
-  /*--SKILLS TABLET STYLES--*/
+  /*---SKILLS TABLET STYLES---*/
  #skills {
   min-height:850px;
  }
@@ -651,7 +653,7 @@ Tablet styles
     width: 50%;
   }
 
-  /*--ABOUT TABLET STYLES --*/
+  /*---ABOUT TABLET STYLES---*/
   #about .content-wrapper {
     display: flex;
     flex-direction: column;
@@ -673,7 +675,7 @@ Tablet styles
   #about .about-content2 {
     width:80%;
   }
-  /*--FOOTER TABLET STYLES--*/
+  /*---FOOTER TABLET STYLES---*/
   #contact .footer-content {
     margin-top: 80px;
     display: flex;
@@ -707,17 +709,17 @@ Tablet styles
 }
 
 /* ==========================================================================
-Desktop
+DESKTOP STYLES
 ========================================================================== */
 
 @media only screen and (min-width: 1200px) {
 
-  /*-- GENERAL STYLES DESKTOP--*/
+  /*---GENERAL DESKTOP STYLES---*/
   h2 {
     font-size: 3.5em;
   }
 
-  /*--HEADER STYLES DESKTOP--*/
+  /*---HEADER DESKTOP STYLES---*/
   header {
     max-height: 800px;
     display:flex;
@@ -751,14 +753,14 @@ Desktop
     font-size: 3em;
   }
 
-  /*--SLOGAN STYLES DESKTOP--*/
+  /*---SLOGAN DESKTOP STYLES---*/
   #slogan h3 {
     word-spacing: 40px;
     font-size: 2em;
     padding: 40px 0;
   }
 
-  /*--PROJECTS STYLES DESKTOP--*/
+  /*---PROJECTS DESKTOP STYLES---*/
   #projects{
     display: flex;
     justify-content:center;
@@ -780,7 +782,7 @@ Desktop
     margin-left:34%;
   }
 
-  /*--SKILLS STYLES DESKTOP--*/
+  /*---SKILLS DESKTOP STYLES---*/
   #skills .content-wrapper{
     max-width:1600px;
   }
@@ -797,7 +799,7 @@ Desktop
     width:33%;
   }
 
-  /*--ABOUT DESKTOP STYLES--*/
+  /*---ABOUT DESKTOP STYLES---*/
   #about .content-wrapper {
     margin: 40px 0 120px 0;
     justify-content: center;
@@ -849,7 +851,7 @@ Desktop
     margin-bottom:0;
   }
 
-  /*--FOOTER DESKTOP STYLES--*/
+  /*---FOOTER DESKTOP STYLES---*/
   footer {
     padding: 50px 0;
     display:flex;
