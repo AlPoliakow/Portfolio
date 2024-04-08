@@ -395,7 +395,12 @@ header h4 {
 
 #about .content-wrapper {
   margin: 40px 0;
-  
+}
+
+#about .about-wrapper2{
+  display:flex;
+  justify-content:center;
+  flex-flow: row wrap;
 }
 
 #about .about-content2 {
@@ -715,6 +720,12 @@ Desktop
   /*--HEADER STYLES DESKTOP--*/
   header {
     max-height: 800px;
+    display:flex;
+    justify-content: center;
+  }
+
+  header .content-wrapper{
+    max-width:1600px;
   }
 
   header nav ul {
@@ -748,8 +759,13 @@ Desktop
   }
 
   /*--PROJECTS STYLES DESKTOP--*/
+  #projects{
+    display: flex;
+    justify-content:center;
+  }
   #projects .content-wrapper {
     margin: 140px 0 40px 0;
+    max-width:1600px;
   }
 
   #projects article {
@@ -765,6 +781,10 @@ Desktop
   }
 
   /*--SKILLS STYLES DESKTOP--*/
+  #skills .content-wrapper{
+    max-width:1600px;
+  }
+
   #skills h2 {
     margin: 120px 0 40px 0;
   }
@@ -781,25 +801,33 @@ Desktop
   #about .content-wrapper {
     margin: 40px 0 120px 0;
     justify-content: center;
-    gap: 10%;
     align-items: stretch;
     flex-flow: row wrap;
+    padding:0;
+    max-width:1600px;
   }
 
   #about h2 {
     width: 100%;
+    max-width:1600px;
+  }
+
+  #about .about-wrapper2{
+    display:flex;
+    justify-content:space-around;
   }
 
   #about figure {
     margin:0;
-    width: 40%;
+    width: 42%;
+    overflow: hidden; 
   }
 
   #about .about-content2 {
     display: flex;
     flex-direction:column;
-    width: 30%;
     margin: 0;
+    max-width:42%;
   }
 
   #about h3 {
@@ -812,13 +840,24 @@ Desktop
     margin:0 0 25px 0;
   }
 
-  #about p {
-    margin: 16px 0;
+  #about .about-paragraph p {
+    display:flex;
+    max-width:400px;
+  }
+
+  #about .about-paragraph .last-paragraph {
+    margin-bottom:0;
   }
 
   /*--FOOTER DESKTOP STYLES--*/
   footer {
     padding: 50px 0;
+    display:flex;
+    justify-content: center;
+  }
+
+  footer .content-wrapper{
+    max-width:1600px;
   }
 
   #contact h2 {
