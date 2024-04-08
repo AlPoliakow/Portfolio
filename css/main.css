@@ -298,23 +298,32 @@ header h4 {
   justify-content: center;
 }
 
-#projects .project-articles article {
+#projects .project-articles .project-card {
   margin-bottom: 80px;
   width: 90%;
   display: flex;
+  padding:1em;
   flex-flow: row wrap;
   justify-content: center;
+  background: #ffffff;
+  border: 0.1em black solid;
+  border-radius: 1em;
+  box-shadow: 0 4px 12px rgba(0,0,0,.1), 0 23px 30px rgba(17,24,39,.2);
 }
 
-#projects figure {
+#projects .project-articles .project-card figure {
   margin: 0;
   width: 100%;
 }
 
 #projects img {
-  border: 4px solid white;
   overflow: hidden;
   height: 175px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.1), 0 15px 10px rgba(17,24,39,.2);
+}
+
+#projects img{
+  border: 0.1em black solid;
 }
 
 #projects h3 {
@@ -337,8 +346,26 @@ header h4 {
   font-weight: bold;
 }
 
+#projects .project-links{
+  margin: 2em 0 1em 0;
+}
+
+#projects button{
+  margin: 0 0.5em;
+  border-radius: 0.5em;
+  padding: 0.2em 0.7em;
+}
+
+#projects button i{
+  padding-right: 0.5em;
+}
+
+
+
 /*---SKILLS MOBILE STYLES---*/
 #skills {
+  border-top: 2px dotted #a4a4f5;
+  border-bottom: 2px dotted #a4a4f5;
   position: relative;
   width: 100%;
   display: flex;
@@ -624,8 +651,8 @@ TABLET STYLES
     justify-content: space-between;
   }
 
-  #projects .project-articles article {
-    flex-basis: 48%;
+  #projects .project-articles .project-card {
+    flex-basis: 43%;
   }
   /*---SKILLS TABLET STYLES---*/
  #skills {
@@ -766,21 +793,26 @@ DESKTOP STYLES
     justify-content:center;
   }
   #projects .content-wrapper {
-    margin: 140px 0 40px 0;
+    margin: 40px 0 40px 0;
     max-width:1600px;
   }
 
-  #projects article {
-    margin-bottom: 100px;
+  #projects .project-articles {
+    display:flex;
+    justify-content: center;
   }
 
-  #projects .project-articles article {
-    flex-basis: 30%;
+  #projects .project-articles .project-card {
+    flex-basis: 26%;
   }
 
-  #projects .gtw {
-    margin-left:34%;
+  #projects .project-articles .unplugged,
+  #projects .project-articles .sticky,
+  #projects .project-articles .organize-me {
+    margin: 0 2% 100px 2%;
   }
+
+
 
   /*---SKILLS DESKTOP STYLES---*/
   #skills .content-wrapper{
@@ -800,6 +832,10 @@ DESKTOP STYLES
   }
 
   /*---ABOUT DESKTOP STYLES---*/
+  #about {
+    display:flex;
+    justify-content: center;
+  }
   #about .content-wrapper {
     margin: 40px 0 120px 0;
     justify-content: center;
