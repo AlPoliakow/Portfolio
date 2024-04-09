@@ -144,7 +144,7 @@ img {
 }
 
 /*---NOTIFICATIONS BAR---*/
-/*.notification-bar {
+.notification-bar {
   position: fixed;
   top: 0;
   left: 0;
@@ -153,17 +153,14 @@ img {
   height: 40px;
   line-height: 40px;
   width: 100%;
-  background: #FFFFFF !important;
+  background: #FFFFFF;
   text-align: center;
   color: black;
   font-size: 0.9em;
   opacity: 1.0;
   box-sizing:border-box;
-  overflow:hidden !important;
-}
-
-.notification-bar::before{
-  opacity:1.0;
+  overflow:hidden;
+  z-index:2;
 }
 
 .notification-bar p {
@@ -184,14 +181,18 @@ img {
   cursor: pointer;
 }
 
+.close:hover{
+  font-size:3em;
+}
+
 .hide {
   height: 0;
-}*/
+}
 
 /*--_BASE HEADER STYLES-_-*/
 header {
   /*--for notifications bar--*/
-  /*margin-top: 40px;*/
+  margin-top:1.5em;
   /*--for header before--*/
   position: relative;
 }
