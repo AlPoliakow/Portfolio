@@ -227,6 +227,10 @@ header nav ul li a {
   font-weight: 700;
 }
 
+header::before nav ul li a:hover {
+  text-decoration: underline; 
+}
+
 header .header2 {
   align-items: center;
   display: flex;
@@ -313,15 +317,17 @@ header h4 {
   box-shadow: 0 4px 12px rgba(0, 0, 0, .1), 0 23px 30px rgba(17, 24, 39, .2);
 }
 
+#projects .project-card figure{
+  margin-top:1em;
+}
+
 #projects img {
   overflow: hidden;
   height: 12em;
   box-shadow: 0 4px 12px rgba(0, 0, 0, .1), 0 15px 10px rgba(17, 24, 39, .2);
-}
-
-#projects img {
   border: 0.1em black solid;
 }
+
 
 #projects h3 {
   margin: 30px 0;
@@ -495,6 +501,7 @@ footer .content-wrapper {
 #contact .hire address {
   margin-top: 30px;
   margin-bottom: 40px;
+  text-decoration:underline;
 }
 
 #contact .follow .social-icons {
