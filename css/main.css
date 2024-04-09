@@ -313,7 +313,6 @@ header h4 {
 
 #projects .project-articles .project-card figure {
   margin: 0;
-  width: 100%;
 }
 
 #projects img {
@@ -702,6 +701,10 @@ TABLET STYLES
   #about .about-content2 {
     width:80%;
   }
+  #about .about-wrapper2{
+  margin-bottom:80px;
+  }
+  
   /*---FOOTER TABLET STYLES---*/
   #contact .footer-content {
     margin-top: 80px;
@@ -773,6 +776,7 @@ DESKTOP STYLES
   header h4 {
     margin: 40px 0;
     font-size: 1.25em;
+    margin-bottom:100px;
   }
 
   header h2 {
@@ -837,7 +841,7 @@ DESKTOP STYLES
     justify-content: center;
   }
   #about .content-wrapper {
-    margin: 40px 0 120px 0;
+    margin: 0;
     justify-content: center;
     align-items: stretch;
     flex-flow: row wrap;
@@ -853,6 +857,7 @@ DESKTOP STYLES
   #about .about-wrapper2{
     display:flex;
     justify-content:space-around;
+    margin-bottom: 120px;
   }
 
   #about figure {
