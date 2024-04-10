@@ -353,13 +353,14 @@ header h4 {
   margin: 2em 0 1em 0;
 }
 
-#projects button {
+#projects a {
   margin: 0 0.5em;
   border-radius: 0.5em;
   padding: 0.2em 0.7em;
+  border:1.5px #152A3E solid;
 }
 
-#projects button i {
+#projects a i {
   padding-right: 0.5em;
 }
 
