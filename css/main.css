@@ -148,8 +148,8 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  right:0;
-  bottom:auto;
+  right: 0;
+  bottom: auto;
   height: 40px;
   line-height: 40px;
   width: 100%;
@@ -158,9 +158,9 @@ img {
   color: black;
   font-size: 0.9em;
   opacity: 1.0;
-  box-sizing:border-box;
-  overflow:hidden;
-  z-index:2;
+  box-sizing: border-box;
+  overflow: hidden;
+  z-index: 2;
 }
 
 .notification-bar p {
@@ -181,8 +181,8 @@ img {
   cursor: pointer;
 }
 
-.close:hover{
-  font-size:3em;
+.close:hover {
+  font-size: 3em;
 }
 
 .hide {
@@ -192,7 +192,7 @@ img {
 /*--_BASE HEADER STYLES-_-*/
 header {
   /*--for notifications bar--*/
-  margin-top:1.5em;
+  margin-top: 1.5em;
   /*--for header before--*/
   position: relative;
 }
@@ -214,7 +214,7 @@ header .content-wrapper {
   opacity: 1.0;
   display: flex;
   flex-direction: column;
-  z-index:1;
+  z-index: 1;
 }
 
 header nav ul {
@@ -229,7 +229,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 
 header .header2 {
@@ -318,8 +318,8 @@ header h4 {
   box-shadow: 0 4px 12px rgba(0, 0, 0, .1), 0 23px 30px rgba(17, 24, 39, .2);
 }
 
-#projects .project-card figure{
-  margin-top:1em;
+#projects .project-card figure {
+  margin-top: 1em;
 }
 
 #projects img {
@@ -357,7 +357,7 @@ header h4 {
   margin: 0 0.5em;
   border-radius: 0.5em;
   padding: 0.2em 0.7em;
-  border:1.5px #152A3E solid;
+  border: 1.5px #152A3E solid;
 }
 
 #projects a i {
@@ -393,7 +393,7 @@ header h4 {
 #skills .content-wrapper {
   display: flex;
   flex-direction: column;
-  z-index:1;
+  z-index: 1;
 }
 
 #skills h2 {
@@ -482,8 +482,8 @@ footer .content-wrapper {
 
 #contact .hire,
 #contact .follow,
-#contact .meet{
-  margin-bottom:50px;
+#contact .meet {
+  margin-bottom: 50px;
 }
 
 #contact .follow h3,
@@ -503,7 +503,7 @@ footer .content-wrapper {
 #contact .hire address {
   margin-top: 30px;
   margin-bottom: 40px;
-  text-decoration:underline;
+  text-decoration: underline;
 }
 
 #contact .follow .social-icons {
@@ -515,7 +515,7 @@ footer .content-wrapper {
 
 #contact .follow .social-icons p {
   font-size: 1.5em;
-  margin:20px 0;
+  margin: 20px 0;
 }
 
 #contact .copyright {
@@ -646,12 +646,13 @@ TABLET STYLES
 
   #projects .projects-container {
     justify-content: center;
-    gap:3%;
+    gap: 3%;
   }
 
   #projects .project-card img {
-    height:10.5em;
+    height: 10.5em;
   }
+
   #projects .projects-container .project-card {
     flex-basis: 43%;
   }
@@ -758,6 +759,20 @@ DESKTOP STYLES
     max-height: 900px;
     display: flex;
     justify-content: center;
+  }
+
+  header::before {
+    content: "";
+    background: url('../img/pexels-brett-sayles-1751634.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.15;
+
   }
 
   header .content-wrapper {
@@ -869,11 +884,11 @@ DESKTOP STYLES
   #about figure {
     width: 42%;
     overflow: hidden;
-    margin-bottom:0;
+    margin-bottom: 0;
   }
 
-  #about img{
-    max-height:483.83px;
+  #about img {
+    max-height: 483.83px;
   }
 
   #about .about-content2 {
@@ -922,20 +937,21 @@ DESKTOP STYLES
     margin-bottom: 50px;
     font-size: 1.5em;
   }
-  #contact .footer-content .follow h3{
-    margin-bottom:40px;
-    font-size:1.5em;
+
+  #contact .footer-content .follow h3 {
+    margin-bottom: 40px;
+    font-size: 1.5em;
   }
 
   #contact .follow .social-icons {
-    gap:40px;
+    gap: 40px;
   }
 
   #contact .follow .social-icons p {
     font-size: 2em;
-    margin:0;
+    margin: 0;
   }
-  
+
   #contact .copyright {
     margin: 40px 0;
   }
