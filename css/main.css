@@ -645,7 +645,8 @@ TABLET STYLES
   }
 
   #projects .projects-container {
-    justify-content: space-between;
+    justify-content: center;
+    gap:3%;
   }
 
   #projects .project-card img {
@@ -814,6 +815,8 @@ DESKTOP STYLES
     flex-basis: 26%;
   }
 
+  #projects .projects-container .npgg,
+  #projects .projects-container .guess,
   #projects .projects-container .unplugged,
   #projects .projects-container .sticky,
   #projects .projects-container .organize-me {
