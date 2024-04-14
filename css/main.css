@@ -329,10 +329,17 @@ header h4 {
   border: 0.1em black solid;
 }
 
+#projects .project-card .unplugged h3{
+  margin:30px 1em;
+}
 #projects h3 {
   margin: 30px 0;
   font-size: 2em;
   text-decoration: underline;
+}
+
+#projects .project-card .unplugged h3{
+  margin:30px 1em;
 }
 
 #projects p {
