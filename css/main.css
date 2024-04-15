@@ -666,7 +666,7 @@ TABLET STYLES
   }
 
   #projects .projects-container .project-card {
-    flex-basis: 43%;
+    width:43%;
   }
 
   /*---SKILLS TABLET STYLES---*/
@@ -839,15 +839,15 @@ DESKTOP STYLES
   }
 
   #projects .projects-container .project-card {
-    flex-basis: 24%;
+    width:26%;
   }
 
   #projects .projects-container .npgg,
   #projects .projects-container .guess,
   #projects .projects-container .unplugged,
   #projects .projects-container .sticky,
-  #projects .projects-container .organize-me {
-    margin: 0 2% 100px 2%;
+  #projects .projects-container .gallery {
+    margin: 0 1% 100px 1%;
   }
 
   /*---SKILLS DESKTOP STYLES---*/
