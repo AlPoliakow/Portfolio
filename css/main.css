@@ -10,6 +10,11 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;  
+    }
+}
 
 html {
   color: #222;
