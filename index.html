@@ -8,12 +8,19 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/normalize.css">
 
+  <!--ACCESSIBLE FONTS-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Alata&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
     rel="stylesheet">
 
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Jost:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Raleway:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Jost:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Raleway:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Hedvig+Letters+Serif:opsz@12..24&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Jost:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <!--ICONS-->
   <script src="https://kit.fontawesome.com/5062d34338.js" crossorigin="anonymous"></script>
   <meta name="description" content="">
 
@@ -33,22 +40,23 @@
 
 <body>
   <div class="notification-bar">
-    <p class="message">Now accepting inquiries<button class="close">&times;</button></p>
+    <p class="message"><a href="#contact">Now accepting enquiries</a><button class="close">&times;</button></p>
   </div>
   <header>
     <div class="content-wrapper">
       <nav>
         <ul>
-          <li><a href="#projects" class="p-nav">Projects</a></li>
-          <li><a href="#skills" class="s-nav">Skills</a></li>
-          <li><a href="#about" class="a-nav">About</a></li>
-          <li><a href="#contact" class="c-nav">Contact me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact me</a></li>
         </ul>
       </nav>
       <div class="header-divider"></div>
       <div class="header2">
-        <h1>Front End Web Developer</h1>
-        <h2><img src="img/avatar.png" alt="Avatar of Al sticking out of computer">Al Poliakow</h2>
+        <h1>Al Poliakow</h1>
+        <!--<img src="img/avatar.png" alt="Smiling face of a person with a wolf's tail">-->
+        <h2>Front End Web Developer</h2>
         <h4 class="tag">A Front End Developer with a passion for accessibility, attention to detail, and timely
           outcomes.</h4>
       </div>
@@ -64,15 +72,15 @@
         <div class="projects-container">
           <div class="project-card gallery">
             <figure>
-              <img src="img/gallery.png" alt="A website with a purple identification card above a list of repositories">
+              <a href="https://alpoliakow.github.io/github-gallery/" target="_blank" rel="noopener"><img src="img/gallery.png" alt="A website with a purple identification card above a list of repositories"></a>
             </figure>
-            <h3>GitHub Repo Gallery</h3>
+            <h3><a href="https://alpoliakow.github.io/github-gallery/" target="_blank" rel="noopener">GitHub Repo Gallery</a></h3>
             <p>A single-page website which fetches data from the GitHub profile using APIs. A current list of public
               repositories is displayed and the search function can filter through repositories to display only those
               that match the users' search.</p>
             <div class="tools">
               <p><Span>Skills:</Span> Vanilla JavaScript, working with APIs</p>
-              <p><br><Span>Tools:</Span>Chrome DevTools, Visual Studio Code, the Command Line</p>
+              <p><br><Span>Tools:</Span> Chrome DevTools, Visual Studio Code, The Command Line</p>
             </div>
             <div class="project-links">
               <a href="https://github.com/AlPoliakow/github-gallery" target="_blank" rel="noopener"><i
@@ -83,15 +91,15 @@
           </div>
           <div class="project-card npgg">
             <figure>
-              <img src="img/npgg.png" alt="A website with a main photo of a library and the start of an article">
+              <a href="https://alpoliakow.github.io/guidelines-guide/" target="_blank" rel="noopener"><img src="img/npgg.png" alt="A website with a main photo of a library and the start of an article"></a>
             </figure>
-            <h3>Neurological Physiotherapy Guidelines Guide</h3>
+            <h3><a href="https://alpoliakow.github.io/guidelines-guide/" target="_blank" rel="noopener">Neurological Physiotherapy Guidelines Guide</a></h3>
             <p>A single-page website which uses Vanilla JavaScript to display a list of Clinical Practice Guidelines
               based on a selected condition. The web page was designed and developed independently using HTML, CSS and
               the CRAP priniciples.</p>
             <div class="tools">
               <p><Span>Skills:</Span> HTML, CSS, JavaScript, design, responsive images and responsive typography</p>
-              <p><br><Span>Tools:</Span>Chrome DevTools, Visual Studio Code, The Command Line</p>
+              <p><br><Span>Tools:</Span> Chrome DevTools, Visual Studio Code, The Command Line</p>
             </div>
             <div class="project-links">
               <a href="https://github.com/AlPoliakow/guidelines-guide/" target="_blank" rel="noopener"><i
@@ -102,9 +110,9 @@
           </div>
           <div class="project-card guess">
             <figure>
-              <img src="img/gtw-desktop.png" alt="Desktop version of Guess The Word game">
+              <a href="https://alpoliakow.github.io/guess-the-word/" target="_blank" rel="noopener"><img src="img/gtw-desktop.png" alt="Desktop version of Guess The Word game"></a>
             </figure>
-            <h3>Guess the Word</h3>
+            <h3><a href="https://alpoliakow.github.io/guess-the-word/" target="_blank" rel="noopener">Guess the Word</a></h3>
             <p> An interactive web page which allows the user to guess a randomly fetched word by entering a single
               letter at a time. Correct guesses are revealed in the mystery word and incorrect guesses are displayed
               below. The game is over when the user guess the mystery word correctly or makes 8 incorrect guesses.</p>
@@ -121,15 +129,15 @@
           </div>
           <div class="project-card unplugged">
             <figure>
-              <img src="img/unplugged.png" alt="Webpage with navigation bar and main photo of a woman on a bridge">
+              <a href="https://alpoliakow.github.io/unplugged/" target="_blank" rel="noopener"><img src="img/unplugged.png" alt="Webpage with navigation bar and main photo of a woman on a bridge"></a>
             </figure>
-            <h3>Unplugged</h3>
+            <h3><a href="https://alpoliakow.github.io/unplugged/" target="_blank" rel="noopener">Unplugged</a></h3>
             <p>A 3-page responsive website advertising a professional retreat. The website includes a navigation bar, a
               features list, reviews,
               contact information, frequently asked questions, and a live map.</p>
             <div class="tools">
               <p><Span>Skills:</Span> HTML, CSS, Flexbox, responsive typography and images, and media queries.</p>
-              <p><br><Span>Tools:</Span> Command line, GitHub, VS Code, Chrome DevTools.</p>
+              <p><br><Span>Tools:</Span> The Command line, GitHub, VS Code, Chrome DevTools.</p>
             </div>
             <div class="project-links">
               <a href="https://github.com/AlPoliakow/unplugged" target="_blank" rel="noopener"><i
@@ -140,9 +148,9 @@
           </div>
           <div class="project-card sticky">
             <figure>
-              <img src="img/sticky.png" alt="Webpage displaying sticky notes with search function and new note button">
+              <a href="https://xqnxn7.csb.app/" target="_blank" rel="noopener"><img src="img/sticky.png" alt="Webpage displaying sticky notes with search function and new note button"></a>
             </figure>
-            <h3>Super Sticky Notes</h3>
+            <h3><a href="https://xqnxn7.csb.app/" target="_blank" rel="noopener">Super Sticky Notes</a></h3>
             <p>An interactive app that allows the user to create, store and delete “notes”. The notes have a title and
               description which the user can edit. The search function displays only the notes containing the searched
               letter or phrase. </p>
@@ -236,12 +244,12 @@
             <h3>Front End Developer</h3>
             <h4>Al Poliakow (they/them)</h4>
             <div class="about-paragraph">
-              <p>Developing user friendly websites is a way in which I believe I can positively impact many lives in a
+              <p>Developing user-friendly websites is a way in which I believe I can positively impact many lives in a
                 small
                 but sustainable way.
                 I’m passionate about improving access to information and making the internet accessible to everyone.
               </p>
-              <p>From a background as a health professional, I've developed strong foundations in team work,
+              <p>From a background as a health professional, I have developed strong foundations in teamwork,
                 communication
                 and working autonomously.
                 I’m passionate about problem solving and strive for perfection in all the little details.</p>
@@ -282,11 +290,11 @@
         </div>
 
       </div>
-      <div class="copyright">
-        <p>Copyright 2024 | Al Poliakow</p>
-        <h6>I acknowledge the Traditional Custodians of Country throughout Australia and their connections to land, sea
+      <div >
+        <h6 class="copyright">I acknowledge the Traditional Custodians of Country throughout Australia and their connections to land, sea
           and community. I pay my respect to their Elders past and present and extend that respect to all Aboriginal and
           Torres Strait Islander peoples.</h6>
+          <p>Copyright 2024 | Al Poliakow</p>
       </div>
     </div>
   </footer>
