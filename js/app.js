@@ -7,12 +7,15 @@ const nav = document.querySelector("nav");
 
 
 closeNotification.addEventListener("click", function(e){
+    console.log("registered click");
     e.preventDefault;
     notificationBar.classList.add("hide");
     message.innerText="";
     closeNotification.innerText="";
     header.style.margin=0;
 });
+
+
 
 
 
