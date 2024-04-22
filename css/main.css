@@ -212,19 +212,7 @@ header {
   position: relative;
 }
 
-header::before {
-  content: "";
-  background: url('../img/rubix3.jpg') no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.15;
-  pointer-events: none;
-}
+
 
 header .content-wrapper {
   display: flex;
@@ -240,44 +228,71 @@ header nav ul {
 
 header nav ul li a {
   font-weight: 700;
+  font-family: "Bree Serif", serif;
+  letter-spacing:0.05em;
+
 }
 
 header nav ul li a:hover {
   text-decoration: underline;
 }
 
-header .header2 {
-  align-items: center;
+header .header2{
+  background:#152A3E;
+  color:white;
+  border: 2px solid #152A3E;
+  border-radius: 1em;
   display: flex;
   flex-direction: column;
+  padding:1.5em;
 }
 
-header h1,
-header h2,
-header h4 {
-  width: 90%;
+header .header2 .header-icons{
+  width: 100%;
+  display:flex;
+  justify-content: flex-end;
 }
 
+header .header2 .header-icons a{
+  font-size: 2em;
+  padding-right:0.5em;
+  color:white;
+}
+
+header .header-text{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+}
 header h1 {
   font-size: 3em;
   text-transform: uppercase;
-  font-weight: 590;
+  letter-spacing:0.05em;
+  font-weight: 550;
+  color:white;
 }
 
 header h2 {
   font-size: 2.25em;
   font-weight: 500;
+  letter-spacing:0.05em;
+  color:white;
+  padding:0 0.25em;
+  text-align:center;
+  border: dotted 2px white;
+}
+
+header h4{
+  color:white;
+  letter-spacing:0.05em;
 }
 
 header img {
-  height: 7em;
+  height: 3em;
   opacity: 1.0;
 }
 
-header h1 img {
-  height: 1.25em;
-  padding: 0 15px 15px 0;
-}
+
 
 /* ==========================================================================
 MOBILE STYLES
@@ -293,20 +308,23 @@ header nav ul {
 }*/
 
 header h1 {
-  margin: 40px 0;
+  margin: 20px 0;
 }
 
 header .header2 {
   opacity: 1.0;
 }
 
-header h2 {
+
+header h2{
+  width:80%;
+  margin-top:10px;
   font-size: 2em;
-  margin: 20px 0;
-}
+  }
+
 
 header h4 {
-  margin: 20px 0 60px 0;
+  margin: 20px 0;
   font-family: "Hedvig Letters Serif", serif;
   font-weight: 800;
 }
@@ -682,13 +700,23 @@ TABLET STYLES
   header {
     max-height: 700px;
   }
+  
+  header nav ul{
+    margin: 2.5em 0 1.5em;
+  }
+
+  header .header2 .header-icons a{
+    padding-right:0.75em;
+  }
 
   header h1 {
-    margin-top: 12%;
+    margin-top: 0.666em;
     font-size: 4em;
   }
 
   header h2 {
+    width:50%;
+    padding:0.25em;
     font-size: 2.5em;
   }
 
@@ -820,27 +848,12 @@ DESKTOP STYLES
     justify-content: center;
   }
 
-  header::before {
-    background: url('../img/pexels-brett-sayles-1751634.jpg') no-repeat;
-    content: "";
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.15;
-    pointer-events: none;
-  }
-
   header .content-wrapper {
     max-width: 1600px;
   }
 
   header nav ul {
-    margin-top: 50px;
-    margin-bottom: 120px;
+    margin: 50px 0;
     width: 50%;
     margin-left: 50%;
     font-size: 1.25em;
@@ -851,15 +864,19 @@ DESKTOP STYLES
     margin: 60px 0;
   }
 
-  header h4 {
-    margin: 40px 0;
-    font-size: 1.25em;
-    margin-bottom: 120px;
+  header .header2 .header-icons a{
+    font-size: 2.75em;
   }
+  
 
   header h2 {
-    margin: 40px 0;
+    margin: 0;
     font-size: 3em;
+  }
+
+  header h4 {
+    margin: 75px 0;
+    font-size: 1.25em;
   }
 
   /*---SLOGAN DESKTOP STYLES---*/
