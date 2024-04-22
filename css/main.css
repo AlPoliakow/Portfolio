@@ -112,7 +112,9 @@ h1,
 h2,
 h3,
 h4,
-h6 {
+h6,
+header nav ul a,
+.project-links a{
   font-family: "Bree Serif", serif;
   font-weight: 400;
   font-style: normal;
@@ -208,11 +210,7 @@ img {
 header {
   /*--for notifications bar--*/
   margin-top: 1.5em;
-  /*--for header before--*/
-  position: relative;
 }
-
-
 
 header .content-wrapper {
   display: flex;
@@ -228,9 +226,7 @@ header nav ul {
 
 header nav ul li a {
   font-weight: 700;
-  font-family: "Bree Serif", serif;
-  letter-spacing:0.05em;
-
+  letter-spacing:0.05em; /*---for increased readability---*/
 }
 
 header nav ul li a:hover {
@@ -240,7 +236,6 @@ header nav ul li a:hover {
 header .header2{
   background:#152A3E;
   color:white;
-  border: 2px solid #152A3E;
   border-radius: 1em;
   display: flex;
   flex-direction: column;
@@ -264,10 +259,11 @@ header .header-text{
   flex-direction:column;
   align-items: center;
 }
+
 header h1 {
   font-size: 3.75em;
   text-transform: uppercase;
-  letter-spacing:0.05em;
+  letter-spacing:0.05em; /*---for increased readability---*/
   font-weight: 550;
   color:white;
 }
@@ -275,24 +271,19 @@ header h1 {
 header h2 {
   font-size: 2.25em;
   font-weight: 500;
-  letter-spacing:0.05em;
+  letter-spacing:0.05em; /*---for increased readability---*/
   color:white;
-  padding:0.25em;
+  padding:0.25em 0;
   text-align:center;
   border: dotted 2px white;
 }
 
 header h4{
   color:white;
-  letter-spacing:0.05em;
+  font-family: "Hedvig Letters Serif", serif;
+  font-weight: 800;
+  letter-spacing:0.075em; /*---for increased readability---*/
 }
-
-header img {
-  height: 3em;
-  opacity: 1.0;
-}
-
-
 
 /* ==========================================================================
 MOBILE STYLES
@@ -302,21 +293,12 @@ header nav ul {
   margin-top: 30px;
 }
 
-/*header nav ul li{
-  border: solid 2px #152A3E;
-  padding: 0.3em;
-}*/
-
 header h1 {
   margin: 20px 0;
 }
 
-header .header2 {
-  opacity: 1.0;
-}
 
-
-header h2{
+header h2 {
   width:80%;
   margin-top:10px;
   font-size: 2em;
@@ -325,25 +307,13 @@ header h2{
 
 header h4 {
   margin: 20px 0;
-  font-family: "Hedvig Letters Serif", serif;
-  font-weight: 800;
-}
-
-/*---SLOGAN MOBILE STYLES---*/
-#slogan {
-  background: #152A3E;
-  text-transform: uppercase;
-}
-
-#slogan h3 {
-  color: white;
-  padding: 30px 0;
-  font-size: 1.25em;
-  word-spacing: 10px;
-  margin: 0;
 }
 
 /*---PROJECT MOBILE STYLES---*/
+#projects{
+  border-bottom: 2px dotted #a4a4f5;
+}
+
 #projects h2 {
   margin: 50px 0;
 }
@@ -355,39 +325,35 @@ header h4 {
 }
 
 #projects .projects-container .project-card {
-  margin-bottom: 80px;
   width: 90%;
-  display: flex;
   padding: 2em;
+  display: flex;
   flex-flow: row wrap;
   justify-content: center;
   background: #ffffff;
   border: 0.1em black solid;
   border-radius: 1em;
+  margin-bottom: 80px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, .1), 0 23px 30px rgba(17, 24, 39, .2);
 }
 
 #projects .project-card figure {
   margin-top: 1em;
+  /*---for uniform sizing---*/
+  width:100%;
+  overflow:hidden;
 }
 
 #projects img {
-  overflow: hidden;
   height: 12em;
-  /*box-shadow: 0 4px 12px rgba(0, 0, 0, .1), 0 15px 10px rgba(17, 24, 39, .2);*/
   border: 0.1em black solid;
 }
 
-#projects .project-card .unplugged h3 {
-  margin: 30px 1em;
-}
 
 #projects h3 a {
   font-family: "Bree Serif", serif;
   font-weight: 400;
   font-style: normal;
-  color: #152A3E;
-  opacity: 1.0;
 }
 
 #projects h3 {
@@ -397,8 +363,10 @@ header h4 {
 }
 
 #projects .project-card .unplugged h3 {
+  /*---for Mobile landscape layout---*/
   margin: 30px 1em;
 }
+
 
 #projects p {
   margin: 0;
@@ -434,28 +402,9 @@ header h4 {
 
 /*---SKILLS MOBILE STYLES---*/
 #skills {
-  border-top: 2px dotted #a4a4f5;
   border-bottom: 2px dotted #a4a4f5;
-  position: relative;
-  display: flex;
-  justify-content: center;
   background: #d2d2fc;
 }
-
-/*#skills::before {
-  content: "";
-  background: url('../img/tools.jpg') no-repeat;
-  /* https://www.pexels.com/photo/stainless-steel-close-wrench-on-spanner-210881/
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.12;
-  box-sizing: border-box;
-}*/
 
 #skills .content-wrapper {
   display: flex;
@@ -468,12 +417,9 @@ header h4 {
   margin-top: 50px;
 }
 
-#skills .tool-block {
-  max-width: 1000px;
-}
-
 #skills .block {
   margin-bottom: 50px;
+  width:100%;
 }
 
 #skills h3 {
@@ -511,6 +457,7 @@ header h4 {
 }
 
 #about .about-content2 {
+  /*---width and margin to match .content-wrapper---*/
   margin: 40px 5% 0 5%;
   width: 90%;
   text-align: left;
@@ -537,12 +484,8 @@ header h4 {
 }
 
 #about h4 {
-  margin-bottom: 40px;
+  margin: 0 0 40px;
   font-size: 1.25em;
-}
-
-#about .about-paragraph {
-  flex-direction: column;
 }
 
 /*---FOOTER MOBILE STYLES---*/
@@ -551,7 +494,7 @@ footer {
 }
 
 footer .content-wrapper {
-  padding-top: 40px;
+  padding: 40px 5%;
 }
 
 #contact .footer-content {
@@ -604,7 +547,6 @@ footer .content-wrapper {
 }
 
 footer .footer-bottom p{
-  margin: 0 0 30px 0;
   font-weight:600;
 }
 
