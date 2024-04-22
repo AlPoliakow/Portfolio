@@ -255,7 +255,7 @@ header .header2 .header-icons{
 
 header .header2 .header-icons a{
   font-size: 2em;
-  padding-right:0.5em;
+  padding-left:0.5em;
   color:white;
 }
 
@@ -265,7 +265,7 @@ header .header-text{
   align-items: center;
 }
 header h1 {
-  font-size: 3em;
+  font-size: 3.75em;
   text-transform: uppercase;
   letter-spacing:0.05em;
   font-weight: 550;
@@ -277,7 +277,7 @@ header h2 {
   font-weight: 500;
   letter-spacing:0.05em;
   color:white;
-  padding:0 0.25em;
+  padding:0.25em;
   text-align:center;
   border: dotted 2px white;
 }
@@ -439,6 +439,7 @@ header h4 {
   position: relative;
   display: flex;
   justify-content: center;
+  background: #d2d2fc;
 }
 
 /*#skills::before {
@@ -565,7 +566,7 @@ footer .content-wrapper {
 
 #contact .follow h3,
 #contact .meet h3,
-#contact .hire h3 {
+#contact .hire h3 a{
   margin: 20px 0;
 }
 
@@ -578,7 +579,7 @@ footer .content-wrapper {
 }
 
 #contact .hire address {
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 40px;
   text-decoration: underline;
 }
@@ -592,13 +593,19 @@ footer .content-wrapper {
 
 #contact .follow .social-icons p {
   font-size: 1.5em;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 #contact .copyright {
-  margin: 60px 0;
-  border: 2px dotted #a4a4f5;
-  padding: 0 10px;
+  margin: 60px 0 40px 0;
+  border: 2px dotted #152A3E;
+  padding: 1em;
+  font-size: 0.75em;
+}
+
+footer .footer-bottom p{
+  margin: 0 0 30px 0;
+  font-weight:600;
 }
 
 
@@ -821,6 +828,10 @@ TABLET STYLES
     margin: 0;
   }
 
+  footer .social-icons  {
+    margin: 0.75em;
+  }
+
   #contact .meet {
     margin: 0;
   }
@@ -900,14 +911,16 @@ DESKTOP STYLES
   #projects .projects-container {
     display: flex;
     justify-content: center;
+    width:100%;
   }
 
   #projects .projects-container .project-card {
     width: 25%;
+    margin:0;
   }
 
   #projects .projects-container .project-card img {
-    height: 14em;
+    height: 12em;
   }
 
   #projects .projects-container .npgg,
@@ -915,7 +928,7 @@ DESKTOP STYLES
   #projects .projects-container .unplugged,
   #projects .projects-container .sticky,
   #projects .projects-container .gallery {
-    margin: 0 1% 100px 1%;
+    margin: 0 0 100px 0;
   }
 
   /*---SKILLS DESKTOP STYLES---*/
@@ -1014,7 +1027,6 @@ DESKTOP STYLES
 
   #contact .footer-content .hire h3,
   #contact .footer-content .meet h3 {
-    margin-bottom: 50px;
     font-size: 1.5em;
   }
 
@@ -1033,7 +1045,7 @@ DESKTOP STYLES
   }
 
   #contact .copyright {
-    margin: 40px 0;
+    margin: 0 0 40px 0;
   }
 }
 
