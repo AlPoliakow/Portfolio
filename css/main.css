@@ -943,9 +943,17 @@ DESKTOP STYLES
     margin: 0;
   }
 
+  footer .footer-bottom{
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+  }
   #contact .acknowledgement {
     margin: 0 0 40px 0;
     font-size: 0.8em;
+    max-width: 1450px;
+    padding: 1em 0.5em;
   }
 }
 
