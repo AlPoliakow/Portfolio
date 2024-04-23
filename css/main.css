@@ -787,6 +787,14 @@ DESKTOP STYLES
   max-width: 1600px;
  }
 
+ header,
+ #projects,
+ #about,
+ #skills{
+  display: flex;
+  justify-content:center;
+ }
+
   /*---HEADER DESKTOP STYLES---*/
   header nav ul {
     margin: 50px 0;
@@ -815,11 +823,6 @@ DESKTOP STYLES
   }
 
   /*---PROJECTS DESKTOP STYLES---*/
-  #projects {
-    display: flex;
-    justify-content: center;
-  }
-
   #projects .content-wrapper {
     margin: 40px 0 40px 0;
     max-width: 1600px;
@@ -851,11 +854,6 @@ DESKTOP STYLES
   }
 
   /*---ABOUT DESKTOP STYLES---*/
-  #about {
-    display: flex;
-    justify-content: center;
-  }
-
   #about .content-wrapper {
     margin: 0;
     justify-content: center;
