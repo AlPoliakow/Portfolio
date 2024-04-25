@@ -224,13 +224,16 @@ header nav ul {
   text-transform: uppercase;
 }
 
+
 header nav ul li a {
-  font-weight: 700;
-  letter-spacing:0.05em; /*---for increased readability---*/
+  letter-spacing:0.005em; /*---for increased readability---*/
+  font-weight: 600;
+  font-size: 1em;
 }
 
 header nav ul li a:hover {
   text-decoration: underline;
+  font-size: 1.2em;
 }
 
 header .header2{
@@ -239,7 +242,7 @@ header .header2{
   border-radius: 1em;
   display: flex;
   flex-direction: column;
-  padding:1.5em;
+  padding:3em;
 }
 
 header .header2 .header-icons{
@@ -261,7 +264,7 @@ header .header-text{
 }
 
 header h1 {
-  font-size: 3.75em;
+  font-size: 3.5em;
   text-transform: uppercase;
   letter-spacing:0.05em; /*---for increased readability---*/
   font-weight: 550;
@@ -282,6 +285,7 @@ header h4{
   color:white;
   font-family: "Hedvig Letters Serif", serif;
   font-weight: 800;
+  line-height:1.5em;
   letter-spacing:0.075em; /*---for increased readability---*/
 }
 
@@ -340,13 +344,15 @@ header h4 {
 #projects .project-card figure {
   margin-top: 1em;
   /*---for uniform sizing---*/
-  width:100%;
   overflow:hidden;
+  height:12em;
+  border: 0.1em black solid;
+  display:flex;
+  justify-content:center;
 }
 
 #projects img {
-  height: 12em;
-  border: 0.1em black solid;
+  height:100%;
 }
 
 
