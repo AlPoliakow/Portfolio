@@ -227,7 +227,7 @@ header nav ul {
 
 header nav ul li a {
   letter-spacing:0.005em; /*---for increased readability---*/
-  font-weight: 600;
+  font-weight: 600; /*---599=much thinner appearance---*/
   font-size: 1em;
 }
 
