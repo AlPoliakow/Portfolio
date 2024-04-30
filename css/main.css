@@ -226,9 +226,9 @@ header nav ul {
 
 
 header nav ul li a {
-  letter-spacing:0.005em; /*---for increased readability---*/
+  letter-spacing:0.008em; /*---for increased readability---*/
   font-weight: 600; /*---599=much thinner appearance---*/
-  font-size: 1em;
+  font-size: 0.95em;
 }
 
 header nav ul li a:hover {
@@ -241,7 +241,6 @@ header .header2{
   border-radius: 1em;
   display: flex;
   flex-direction: column;
-  padding:3em;
 }
 
 header .header2 .header-icons{
@@ -293,18 +292,26 @@ MOBILE STYLES
 ========================================================================== */
 /*---HEADER MOBILE STYLES---*/
 header nav ul {
-  margin-top: 30px;
-}
-
-header h1 {
   margin: 20px 0;
 }
 
+header .header2{
+  padding: 2em 3em;
+}
+
+header .header2 .header-icons a{
+  font-size: 1.75em;
+  padding-left:0.5em;
+  color:white;
+}
+
+header h1 {
+  margin: 40px 0;
+}
 
 header h2 {
-  width:80%;
   margin-top:10px;
-  font-size: 2em;
+  font-size: 2.5em;
   }
 
 
@@ -328,7 +335,6 @@ header h4 {
 }
 
 #projects .projects-container .project-card {
-  width: 90%;
   padding: 2em;
   display: flex;
   flex-flow: row wrap;
@@ -336,7 +342,7 @@ header h4 {
   background: #ffffff;
   border: 0.1em black solid;
   border-radius: 1em;
-  margin-bottom: 80px;
+  margin-bottom:60px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, .1), 0 23px 30px rgba(17, 24, 39, .2);
 }
 
@@ -344,14 +350,15 @@ header h4 {
   margin-top: 1em;
   /*---for uniform sizing---*/
   overflow:hidden;
-  height:12em;
+  width:100%;
+  height:auto;
   border: 0.1em black solid;
   display:flex;
   justify-content:center;
 }
 
 #projects img {
-  height:100%;
+  width:100%;
 }
 
 
@@ -367,11 +374,10 @@ header h4 {
   text-decoration: underline;
 }
 
-#projects .project-card .unplugged h3 {
+#projects .project-card  h3 {
   /*---for Mobile landscape layout---*/
-  margin: 30px 1em;
+  width:100%;
 }
-
 
 #projects p {
   margin: 0;
@@ -419,7 +425,11 @@ header h4 {
 }
 
 #skills h2 {
-  margin-top: 50px;
+  margin: 50px 0;
+}
+
+#skills .tool-block{
+  width:100%;
 }
 
 #skills .block {
@@ -433,7 +443,7 @@ header h4 {
   color: #cacaf8;
   width: 100%;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
 }
 
 #skills h3 i {
@@ -452,7 +462,11 @@ header h4 {
 }
 
 #about .content-wrapper {
-  margin: 40px 0;
+  margin: 0 0 40px 0;
+}
+
+#about h2{
+  margin: 50px 0;
 }
 
 #about .about-wrapper2 {
@@ -462,14 +476,16 @@ header h4 {
 }
 
 #about .about-content2 {
-  /*---width and margin to match .content-wrapper---*/
-  margin: 40px 5% 0 5%;
-  width: 90%;
-  text-align: left;
+  text-align: center;
 }
 
 #about figure {
-  width: 100%;
+  width:100%;
+  height:auto;
+  overflow:hidden;
+  display: flex;
+  justify-content:center;
+  border: #a4a4f5 2px solid;
 }
 
 #about img,
@@ -478,18 +494,8 @@ header h4 {
   width: 100%;
 }
 
-#about h2 {
-  margin: 20px 0 40px 0;
-}
-
-#about h3 {
-  margin-bottom: 20px;
-  font-size: 1.65em;
-  font-weight: 900;
-}
-
 #about h4 {
-  margin: 0 0 40px;
+  margin: 40px 0 20px 0;
   font-size: 1.25em;
 }
 
@@ -502,6 +508,9 @@ footer .content-wrapper {
   /*---consistent with general .content-wrapper---*/
   padding: 40px 5%;
 }
+footer h2 {
+  margin: 10px 0 50px 0;
+} 
 
 footer .footer-content {
   margin-top: 40px;
@@ -544,6 +553,7 @@ footer .acknowledgement {
 
 footer .footer-bottom p{
   font-weight:600;
+  font-size: 0.8em;
 }
 
 
@@ -643,7 +653,7 @@ TABLET STYLES
 
   /*---HEADER TABLET STYLES---*/
   header nav ul{
-    margin: 2.5em 0 1.5em;
+    margin: 25px 0;
   }
 
   header .header2 {
@@ -654,30 +664,24 @@ TABLET STYLES
   }
 
   header h1 {
-    margin-top: 0.666em;
     font-size: 4.5em;
+    margin: 40px 0 20px 0;
   }
 
   header h2 {
-    width:40%;
     padding:0.25em;
     font-size: 2.5em;
   }
 
 
   /*---PROJECTS TABLET STYLES---*/
-  #projects h2 {
-    margin: 80px 0;
-  }
-
   #projects .projects-container {
-    justify-content: center;
     width:100%;
-    gap: 2%;
+    gap:2%;
   }
 
   #projects .projects-container .project-card {
-    width: 40%;
+    width: 39%;
   }
 
   /*---SKILLS TABLET STYLES---*/
@@ -710,26 +714,42 @@ TABLET STYLES
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0;
   }
 
-  #about h2 {
-    margin: 80px 0;
-  }
-
-  #about figure {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-  }
-
-  #about .about-content2 {
-    width: 80%;
+  #about h2{
+    margin: 50px 0 20px 0;
   }
 
   #about .about-wrapper2 {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
+    width:100%;
+    justify-content:center;
+    gap: 4%;
+    
+  }
+
+  #about h4 {
+    margin: 0 0 50px 0;
+    order:1;
+  }
+
+  #about figure {
+    height: 360px;
+    width:auto;
+    display: flex;
+    justify-content: center;
+    order:2;
+  }
+
+  #about .about-content2 {
+    height: 360px;
+    width:310px;
+    order:3;
+    text-align:left;
+  }
+
+  #about .about-content2 p{
+    margin:0;
   }
 
   /*---FOOTER TABLET STYLES---*/
@@ -810,11 +830,7 @@ DESKTOP STYLES
   }
 
   /*---PROJECTS DESKTOP STYLES---*/
-  #projects h2{
-    margin: 20px 0 60px 0;
-  }
   #projects .content-wrapper {
-    margin: 40px 0 40px 0;
     max-width: 1600px;
   }
 
@@ -846,63 +862,26 @@ DESKTOP STYLES
   /*---ABOUT DESKTOP STYLES---*/
   #about .content-wrapper {
     margin: 0;
+    max-width: 1600px;
     justify-content: center;
     align-items: stretch;
     flex-flow: row wrap;
     padding: 0;
   }
 
-  #about h2 {
-    width: 100%;
-    max-width: 1600px;
-    margin: 60px 0;
+  #about h4{
+    margin: 0 0 40px 0;
+    font-size: 1.5em;
   }
 
   #about .about-wrapper2 {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 120px;
+    margin-bottom: 100px;
   }
 
-  #about figure {
-    width: 42%;
-    overflow: hidden;
-    margin-bottom: 0;
-  }
-
-  #about img {
-    max-height: 483.83px;
-  }
-
-  #about .about-content2 {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    max-width: 42%;
-  }
-
-  #about h3 {
-    font-size: 1.75em;
-    margin: 0 0 15px 0;
-  }
-
-  #about h4 {
-    font-size: 1.5em;
-    margin: 0 0 25px 0;
-  }
-
-  #about .about-paragraph p {
-    display: flex;
-    max-width: 450px;
-  }
-
-  #about .about-paragraph .last-paragraph {
-    margin-bottom: 0;
-  }
 
   /*---FOOTER DESKTOP STYLES---*/
   footer {
-    padding: 50px 0;
+    padding: 0;
     display: flex;
     justify-content: center;
   }
@@ -913,10 +892,6 @@ DESKTOP STYLES
 
   footer .footer-content div {
     margin: 0 25px 25px 25px;
-  }
-
- footer h2 {
-    margin: 0;
   }
 
   footer h3{
