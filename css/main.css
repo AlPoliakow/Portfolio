@@ -351,6 +351,8 @@ header h4 {
   /*---for uniform sizing---*/
   overflow:hidden;
   width:100%;
+  max-width: 400px;
+  max-height:250px;
   height:auto;
   border: 0.1em black solid;
   display:flex;
@@ -358,7 +360,8 @@ header h4 {
 }
 
 #projects img {
-  width:100%;
+ width:100%;
+ height:100%;
 }
 
 
@@ -836,10 +839,6 @@ DESKTOP STYLES
 
   #projects .projects-container .project-card {
     width: 25%;
-    margin:0;
-  }
-
-  #projects .projects-container .project-card {
     margin: 0 0 100px 0;
   }
 
