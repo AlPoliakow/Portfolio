@@ -114,7 +114,7 @@ h3,
 h4,
 h6,
 header nav ul a,
-.project-links a{
+.project-links a {
   font-family: "Bree Serif", serif;
   font-weight: 400;
   font-style: normal;
@@ -136,7 +136,8 @@ h2 {
   font-size: 3em;
   text-transform: uppercase;
   font-weight: bold;
-}
+    margin: 40px 0;
+  }
 
 p,
 ul,
@@ -226,8 +227,10 @@ header nav ul {
 
 
 header nav ul li a {
-  letter-spacing:0.008em; /*---for increased readability---*/
-  font-weight: 600; /*---599=much thinner appearance---*/
+  letter-spacing: 0.008em;
+  /*---for increased readability---*/
+  font-weight: 600;
+  /*---599=much thinner appearance---*/
   font-size: 0.95em;
 }
 
@@ -235,56 +238,59 @@ header nav ul li a:hover {
   text-decoration: underline;
 }
 
-header .header2{
-  background:#152A3E;
-  color:white;
+header .header2 {
+  background: #152A3E;
+  color: white;
   border-radius: 1em;
   display: flex;
   flex-direction: column;
 }
 
-header .header2 .header-icons{
+header .header2 .header-icons {
   width: 100%;
-  display:flex;
+  display: flex;
   justify-content: flex-end;
 }
 
-header .header2 .header-icons a{
+header .header2 .header-icons a {
   font-size: 2em;
-  padding-left:0.5em;
-  color:white;
+  padding-left: 0.5em;
+  color: white;
 }
 
-header .header-text{
-  display:flex;
-  flex-direction:column;
+header .header-text {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
 header h1 {
-  font-size: 3.5em;
+  font-size: 3em;
   text-transform: uppercase;
-  letter-spacing:0.05em; /*---for increased readability---*/
+  letter-spacing: 0.05em;
+  /*---for increased readability---*/
   font-weight: 550;
-  color:white;
+  color: white;
 }
 
 header h2 {
-  font-size: 2.25em;
+  font-size: 2em;
   font-weight: 500;
-  letter-spacing:0.05em; /*---for increased readability---*/
-  color:white;
-  padding:0.25em 0;
-  text-align:center;
+  letter-spacing: 0.05em;
+  /*---for increased readability---*/
+  color: white;
+  padding: 0.25em 0;
+  text-align: center;
   border: dotted 2px white;
 }
 
-header h4{
-  color:white;
+header h4 {
+  color: white;
   font-family: "Hedvig Letters Serif", serif;
   font-weight: 800;
-  line-height:1.5em;
-  letter-spacing:0.075em; /*---for increased readability---*/
+  line-height: 1.5em;
+  letter-spacing: 0.075em;
+  /*---for increased readability---*/
 }
 
 /* ==========================================================================
@@ -295,37 +301,37 @@ header nav ul {
   margin: 20px 0;
 }
 
-header .header2{
+header .header2 {
   padding: 2em 3em;
 }
 
-header .header2 .header-icons a{
+header .header2 .header-icons a {
   font-size: 1.75em;
-  padding-left:0.5em;
-  color:white;
+  padding-left: 0.5em;
+  color: white;
 }
 
 header h1 {
-  margin: 40px 0;
-}
-
-header h2 {
-  margin-top:10px;
-  font-size: 2.5em;
-  }
-
-
-header h4 {
   margin: 20px 0;
 }
 
+header h2 {
+  margin-top: 10px;
+  font-size: 2em;
+}
+
+header h4 {
+  margin: 0;
+  font-size: 1em;
+}
+
 /*---PROJECT MOBILE STYLES---*/
-#projects{
+#projects {
   border-bottom: 2px dotted #a4a4f5;
 }
 
 #projects h2 {
-  margin: 50px 0;
+  margin: 40px 0;
 }
 
 #projects .projects-container {
@@ -335,6 +341,7 @@ header h4 {
 }
 
 #projects .projects-container .project-card {
+  max-width: 350px;
   padding: 2em;
   display: flex;
   flex-flow: row wrap;
@@ -342,26 +349,25 @@ header h4 {
   background: #ffffff;
   border: 0.1em black solid;
   border-radius: 1em;
-  margin-bottom:60px;
+  margin: 0 5px 60px 5px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, .1), 0 23px 30px rgba(17, 24, 39, .2);
 }
 
 #projects .project-card figure {
   margin-top: 1em;
   /*---for uniform sizing---*/
-  overflow:hidden;
-  width:100%;
-  max-width: 400px;
-  max-height:250px;
-  height:auto;
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
   border: 0.1em black solid;
-  display:flex;
-  justify-content:center;
+  display: flex;
+  justify-content: center;
 }
 
 #projects img {
- width:100%;
- height:100%;
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -377,9 +383,9 @@ header h4 {
   text-decoration: underline;
 }
 
-#projects .project-card  h3 {
+#projects .project-card h3 {
   /*---for Mobile landscape layout---*/
-  width:100%;
+  width: 100%;
 }
 
 #projects p {
@@ -427,17 +433,22 @@ header h4 {
   align-items: center;
 }
 
-#skills h2 {
-  margin: 50px 0;
-}
-
-#skills .tool-block{
-  width:100%;
+#skills .tool-block {
+  width: 100%;
 }
 
 #skills .block {
   margin-bottom: 50px;
-  width:100%;
+  /* for landscape mobile view */
+  display:flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+/* for landscape mobile view */
+#skills .block div {
+  width: 250px; 
+  padding: 0 1em;
 }
 
 #skills h3 {
@@ -468,38 +479,36 @@ header h4 {
   margin: 0 0 40px 0;
 }
 
-#about h2{
-  margin: 50px 0;
-}
-
 #about .about-wrapper2 {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
 
-#about .about-content2 {
-  text-align: center;
-}
-
 #about figure {
-  width:100%;
-  height:auto;
-  overflow:hidden;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  overflow: hidden;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   border: #a4a4f5 2px solid;
 }
 
 #about img,
 #about h3,
-#about h4 {
+#about h4{
   width: 100%;
 }
 
 #about h4 {
-  margin: 40px 0 20px 0;
+  margin: 40px 40px 20px 40px;
   font-size: 1.25em;
+  max-width: 300px;
+}
+
+#about .about-content2 {
+  text-align: center;
 }
 
 /*---FOOTER MOBILE STYLES---*/
@@ -511,21 +520,27 @@ footer .content-wrapper {
   /*---consistent with general .content-wrapper---*/
   padding: 40px 5%;
 }
+
 footer h2 {
   margin: 10px 0 50px 0;
-} 
+}
 
 footer .footer-content {
   margin-top: 40px;
+  /* for mobile landscape view */
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
 footer .hire,
 footer .follow,
 footer .meet {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  width:300px;
 }
 
-footer h3{
+footer h3 {
   margin: 20px 0;
 }
 
@@ -541,7 +556,7 @@ footer .hire address {
   text-decoration: underline;
 }
 
-footer .follow p { 
+footer .follow p {
   /*icons sizing and spacing*/
   font-size: 1.5em;
   word-spacing: 1em;
@@ -554,8 +569,8 @@ footer .acknowledgement {
   font-size: 0.75em;
 }
 
-footer .footer-bottom p{
-  font-weight:600;
+footer .footer-bottom p {
+  font-weight: 600;
   font-size: 0.8em;
 }
 
@@ -655,49 +670,50 @@ TABLET STYLES
   }
 
   /*---HEADER TABLET STYLES---*/
-  header nav ul{
+  header nav ul {
     margin: 25px 0;
   }
 
   header .header2 {
-    padding:3em;
+    padding: 3em;
   }
-  header .header2 .header-icons a{
-    padding-left:1em;
+
+  header .header2 .header-icons a {
+    padding-left: 1em;
   }
 
   header h1 {
-    font-size: 4.5em;
-    margin: 40px 0 20px 0;
+    font-size: 4em;
   }
 
   header h2 {
-    padding:0.25em;
+    padding: 0.25em;
     font-size: 2.5em;
+  }
+
+  header h4{
+    margin-bottom: 10px;
   }
 
 
   /*---PROJECTS TABLET STYLES---*/
   #projects .projects-container {
-    width:100%;
-    gap:2%;
+    width: 100%;
+    gap: 2%;
   }
 
   #projects .projects-container .project-card {
     width: 39%;
+    margin: 0 0 60px 0; /* to reset from mobile landscape view*/
   }
 
   /*---SKILLS TABLET STYLES---*/
-  #skills h2 {
-    margin-top: 100px;
-  }
-
   #skills .tool-block {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-bottom:30px;
-    align-items:center;
+    margin-bottom: 30px;
+    align-items: center;
   }
 
   #skills .content-wrapper .tool-block .block {
@@ -709,7 +725,7 @@ TABLET STYLES
   }
 
   #skills .tool-block .block div {
-    width: 50%;
+    width: 40%;
   }
 
   /*---ABOUT TABLET STYLES---*/
@@ -719,40 +735,35 @@ TABLET STYLES
     align-items: center;
   }
 
-  #about h2{
+  #about h2 {
     margin: 50px 0 20px 0;
-  }
-
-  #about .about-wrapper2 {
-    margin-bottom: 50px;
-    width:100%;
-    justify-content:center;
-    gap: 4%;
-    
   }
 
   #about h4 {
     margin: 0 0 50px 0;
-    order:1;
+    order: 1;
+    max-width: none; /* to correct from mobile landscape */
+  }
+
+  #about .about-wrapper2 {
+    margin-bottom: 50px;
+    width: 100%;
+    gap: 4%;
   }
 
   #about figure {
-    height: 360px;
-    width:auto;
-    display: flex;
-    justify-content: center;
-    order:2;
+    order: 2;
   }
 
   #about .about-content2 {
     height: 360px;
-    width:310px;
-    order:3;
-    text-align:left;
+    width: 310px;
+    order: 3;
+    text-align: left;
   }
 
-  #about .about-content2 p{
-    margin:0;
+  #about .about-content2 p {
+    margin: 0;
   }
 
   /*---FOOTER TABLET STYLES---*/
@@ -764,18 +775,18 @@ TABLET STYLES
   }
 
   footer .footer-content div {
-    width:35%;
+    width: 35%;
     margin: 0 15px 20px 15px;
   }
 
-  footer  h3 {
+  footer h3 {
     margin: 0 0 20px 0;
   }
 
   footer .follow p {
     /*icons sizing and spacing*/
     font-size: 1.75em;
-    margin:16px;
+    margin: 16px;
   }
 
   footer .acknowledgement {
@@ -790,19 +801,19 @@ DESKTOP STYLES
 @media only screen and (min-width: 1200px) {
 
   /*---GENERAL DESKTOP STYLES---*/
- header .content-wrapper,
- #projects .content-wrapper,
- #skills .content-wrapper {
-  max-width: 1600px;
- }
+  header .content-wrapper,
+  #projects .content-wrapper,
+  #skills .content-wrapper {
+    max-width: 1600px;
+  }
 
- header,
- #projects,
- #about,
- #skills{
-  display: flex;
-  justify-content:center;
- }
+  header,
+  #projects,
+  #about,
+  #skills {
+    display: flex;
+    justify-content: center;
+  }
 
   /*---HEADER DESKTOP STYLES---*/
   header nav ul {
@@ -812,16 +823,16 @@ DESKTOP STYLES
     font-size: 1.25em;
   }
 
- 
+
   header h1 {
     font-size: 4.5em;
     margin: 10px 0 30px 0;
   }
 
-  header .header2 .header-icons a{
+  header .header2 .header-icons a {
     font-size: 2.75em;
   }
-  
+
   header h2 {
     margin: 0;
     font-size: 3em;
@@ -843,7 +854,7 @@ DESKTOP STYLES
   }
 
   /*---SKILLS DESKTOP STYLES---*/
-   #skills h2 {
+  #skills h2 {
     margin: 60px 0 40px 0;
   }
 
@@ -852,8 +863,9 @@ DESKTOP STYLES
   }
 
   #skills .content-wrapper .tool-block .block {
-    max-width:900px;
+    max-width: 900px;
   }
+
   #skills .tool-block .block div {
     width: 33%;
   }
@@ -868,7 +880,7 @@ DESKTOP STYLES
     padding: 0;
   }
 
-  #about h4{
+  #about h4 {
     margin: 0 0 40px 0;
     font-size: 1.5em;
   }
@@ -893,22 +905,22 @@ DESKTOP STYLES
     margin: 0 25px 25px 25px;
   }
 
-  footer h3{
+  footer h3 {
     font-size: 1.5em;
   }
 
   footer .follow p {
     font-size: 2em;
-    margin:16px;
+    margin: 16px;
   }
 
-  footer .footer-bottom{
-    display:flex;
+  footer .footer-bottom {
+    display: flex;
     justify-content: center;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
   }
-  
+
   footer .acknowledgement {
     margin: 20px 0 40px 0;
     font-size: 0.8em;
