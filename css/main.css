@@ -420,6 +420,10 @@ header h4 {
   padding-right: 0.5em;
 }
 
+#projects .sticky .tools a:hover {
+  font-weight: 600;
+}
+
 /*---SKILLS MOBILE STYLES---*/
 #skills {
   border-bottom: 2px dotted #a4a4f5;
